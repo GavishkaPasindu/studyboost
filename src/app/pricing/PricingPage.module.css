@@ -1,0 +1,202 @@
+.page {
+    padding-top: 68px;
+    padding-bottom: 100px;
+}
+
+.header {
+    padding: 80px 0 56px;
+    text-align: center;
+}
+
+.title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+    color: #f1f5f9;
+}
+
+.subtitle {
+    font-size: 1.05rem;
+    color: #94a3b8;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* Plans */
+.plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.plan {
+    padding: 36px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    transition: all 0.25s;
+}
+
+.plan:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(129, 140, 248, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.planPrimary {
+    border-color: rgba(129, 140, 248, 0.35) !important;
+    background: rgba(99, 102, 241, 0.06) !important;
+    box-shadow: 0 0 60px rgba(99, 102, 241, 0.12) !important;
+}
+
+.planBadge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 5px 16px;
+    border-radius: 999px;
+    white-space: nowrap;
+    box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4);
+}
+
+.planHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.planIcon {
+    font-size: 1.8rem;
+}
+
+.planName {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #f1f5f9;
+}
+
+.priceRow {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #f1f5f9;
+    line-height: 1;
+}
+
+.per {
+    font-size: 0.9rem;
+    color: #475569;
+    padding-bottom: 8px;
+}
+
+.planDesc {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.featureList {
+    list-style: none;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.feature {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.featureNo {
+    color: #334155;
+}
+
+/* Guarantee */
+.guarantee {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 840px;
+    margin: 32px auto 0;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 20px 28px;
+}
+
+.guaranteeIcon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.guarantee strong {
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: 4px;
+}
+
+.guarantee p {
+    font-size: 0.88rem;
+    color: #475569;
+}
+
+/* FAQ */
+.faqs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.faq {
+    padding: 24px;
+}
+
+.faqQ {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: 10px;
+}
+
+.faqA {
+    font-size: 0.88rem;
+    color: #475569;
+    line-height: 1.75;
+}
+
+@media (max-width: 700px) {
+    .plans {
+        grid-template-columns: 1fr;
+    }
+
+    .faqs {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,230 @@
+.page {
+    padding-top: 68px;
+    padding-bottom: 100px;
+}
+
+.header {
+    padding: 80px 0 56px;
+    text-align: center;
+}
+
+.title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+    color: #f1f5f9;
+}
+
+.subtitle {
+    font-size: 1.05rem;
+    color: #94a3b8;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+
+/* Feature Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card {
+    padding: 28px;
+}
+
+.cardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.iconWrap {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+}
+
+.icon {
+    font-size: 1.6rem;
+}
+
+.statBox {
+    text-align: right;
+}
+
+.stat {
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.statLabel {
+    font-size: 0.72rem;
+    color: #475569;
+    white-space: nowrap;
+}
+
+.cardTitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: 10px;
+}
+
+.cardDesc {
+    font-size: 0.88rem;
+    color: #475569;
+    line-height: 1.75;
+}
+
+/* How it works */
+.howSection {}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    position: relative;
+    margin-top: 48px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 16px;
+    position: relative;
+}
+
+.stepNum {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(129, 140, 248, 0.1);
+    border: 2px solid rgba(129, 140, 248, 0.25);
+    border-radius: 50%;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #818cf8;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.stepLine {
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    right: -50%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(129, 140, 248, 0.3), transparent);
+    z-index: 0;
+}
+
+.stepTitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: 10px;
+}
+
+.stepDesc {
+    font-size: 0.86rem;
+    color: #475569;
+    line-height: 1.7;
+}
+
+/* Comparison */
+.compareSection {}
+
+.table {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.tableHeader {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tableRow {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    transition: background 0.2s;
+}
+
+.tableRow:last-child {
+    border-bottom: none;
+}
+
+.tableRow:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.tableCol {
+    padding: 16px 20px;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+.tableHeader .tableCol {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #f1f5f9;
+}
+
+.colOld {
+    color: #334155 !important;
+}
+
+.colNew {
+    color: #34d399 !important;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .stepLine {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+}

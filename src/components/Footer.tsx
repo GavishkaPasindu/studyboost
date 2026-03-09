@@ -1,0 +1,84 @@
+import Link from 'next/link';
+import styles from './Footer.module.css';
+
+export default function Footer() {
+    return (
+        <footer className={styles.footer}>
+            <div className={styles.inner}>
+                {/* Brand */}
+                <div className={styles.brand}>
+                    <Link href="/" className={styles.logo}>
+                        <span className={styles.logoIcon}>⚡</span>
+                        <span>StudyBoost <strong>AI</strong></span>
+                    </Link>
+                    <p className={styles.tagline}>
+                        Study smarter with the power of AI. Trusted by 10,000+ students worldwide.
+                    </p>
+                    <div className={styles.socials}>
+                        <a href="#" aria-label="Twitter" className={styles.social}>𝕏</a>
+                        <a href="#" aria-label="Instagram" className={styles.social}>📷</a>
+                        <a href="#" aria-label="LinkedIn" className={styles.social}>in</a>
+                        <a href="#" aria-label="Discord" className={styles.social}>💬</a>
+                    </div>
+                </div>
+
+                {/* Product */}
+                <div className={styles.col}>
+                    <h4>Product</h4>
+                    <Link href="/ai-tools">AI Tools</Link>
+                    <Link href="/features">Features</Link>
+                    <Link href="/pricing">Pricing</Link>
+                    <Link href="/blog">Blog</Link>
+                </div>
+
+                {/* Company */}
+                <div className={styles.col}>
+                    <h4>Company</h4>
+                    <Link href="/about">About Us</Link>
+                    <Link href="/contact">Contact</Link>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+
+                {/* Newsletter */}
+                <div className={styles.newsletter}>
+                    <h4>📬 Weekly Study Boost</h4>
+                    <p>Get AI study tips, resources, and exclusive offers in your inbox.</p>
+                    <div className={styles.form}>
+                        <input
+                            type="email"
+                            placeholder="your@email.com"
+                            className="input-field"
+                            aria-label="Email for newsletter"
+                        />
+                        <button className="btn-primary btn-sm">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.bottom}>
+                <div className={styles.bottomInner}>
+                    <p>© 2025 StudyBoost AI. All rights reserved.</p>
+                    <p className={styles.external}>
+                        Powered by{' '}
+                        <a
+                            href="https://deepmind.google/gemini"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Google Gemini
+                        </a>{' '}
+                        &middot;{' '}
+                        <a
+                            href="https://vercel.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Deployed on Vercel
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    );
+}

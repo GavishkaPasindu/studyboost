@@ -1,0 +1,273 @@
+.page {
+    padding-top: 68px;
+    padding-bottom: 100px;
+}
+
+.header {
+    padding: 80px 0 56px;
+    text-align: center;
+}
+
+.title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #f1f5f9;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    font-size: 1.05rem;
+    color: #94a3b8;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.sectionTitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: 24px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #475569;
+}
+
+.successBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding: 48px 32px;
+    background: rgba(52, 211, 153, 0.05);
+    border: 1px solid rgba(52, 211, 153, 0.15);
+    border-radius: 16px;
+}
+
+.successIcon {
+    font-size: 2.5rem;
+}
+
+.successBox h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #34d399;
+}
+
+.successBox p {
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.magnetCard {
+    padding: 24px;
+}
+
+.magnetHeader {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.magnetEmoji {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.magnetTitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: 6px;
+}
+
+.magnetSub {
+    font-size: 0.82rem;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.magnetForm {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.magnetForm .input-field {
+    flex: 1;
+    min-width: 140px;
+    font-size: 0.85rem;
+    padding: 10px 14px;
+}
+
+.signupSuccess {
+    font-size: 0.88rem;
+    color: #34d399;
+    background: rgba(52, 211, 153, 0.07);
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(52, 211, 153, 0.15);
+}
+
+.infoCard {
+    padding: 24px;
+}
+
+.infoTitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: 18px;
+}
+
+.infoItems {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.infoIcon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(129, 140, 248, 0.1);
+    border-radius: 10px;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.infoLabel {
+    font-size: 0.72rem;
+    color: #334155;
+    font-weight: 700;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.infoItem span,
+.infoItem a {
+    font-size: 0.88rem;
+    color: #475569;
+}
+
+.infoItem a {
+    color: #818cf8;
+    transition: color 0.2s;
+}
+
+.infoItem a:hover {
+    color: #a78bfa;
+}
+
+.socialCard {
+    padding: 24px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socialItem {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.socialItem:hover {
+    background: rgba(129, 140, 248, 0.07);
+    border-color: rgba(129, 140, 248, 0.2);
+}
+
+.socialIcon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(129, 140, 248, 0.1);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #818cf8;
+    flex-shrink: 0;
+}
+
+.socialLabel {
+    font-size: 0.78rem;
+    color: #334155;
+    font-weight: 600;
+}
+
+.socialHandle {
+    font-size: 0.85rem;
+    color: #818cf8;
+}
+
+@media (max-width: 900px) {
+    .wrap {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+}

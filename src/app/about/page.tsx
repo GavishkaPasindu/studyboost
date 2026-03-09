@@ -1,0 +1,208 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import styles from './AboutPage.module.css';
+
+export const metadata: Metadata = {
+    title: 'About – StudyBoost AI',
+    description:
+        'Learn about StudyBoost AI — our mission to help every student study smarter with AI, meet our team, and read real student testimonials.',
+    keywords: [
+        'about AI study assistant',
+        'AI learning platform',
+        'student study support',
+        'StudyBoost AI mission',
+    ],
+};
+
+const team = [
+    {
+        name: 'Dr. Priya Sharma',
+        role: 'Co-Founder & CEO',
+        avatar: '👩‍💻',
+        bio: 'Former University of Oxford AI researcher. Priya has spent 10 years studying how students learn and applying AI to improve academic outcomes.',
+        color: '#6366f1',
+    },
+    {
+        name: 'James O\'Connor',
+        role: 'Co-Founder & CTO',
+        avatar: '👨‍🔬',
+        bio: 'Ex-Google engineer with a passion for building tools that matter. James architected the Gemini API integration powering all StudyBoost AI tools.',
+        color: '#8b5cf6',
+    },
+    {
+        name: 'Amara Osei',
+        role: 'Head of Product & Education',
+        avatar: '👩‍🎓',
+        bio: 'Former secondary school teacher turned edtech product lead. Amara ensures every feature actually improves learning outcomes for real students.',
+        color: '#06b6d4',
+    },
+];
+
+const testimonials = [
+    {
+        name: 'Emily T.',
+        university: 'University of Manchester',
+        subject: 'Medicine',
+        quote: 'StudyBoost AI completely changed how I revise. I used to spend 4 hours making notes — now a 10-minute AI session gives me better summaries than I could write myself.',
+        stars: 5,
+        avatar: '👩‍⚕️',
+    },
+    {
+        name: 'Marcus K.',
+        university: 'London School of Economics',
+        subject: 'Economics',
+        quote: 'The flashcard generator is genius. I paste in my lecture slides and get 20 practice cards in seconds. My recall in exams has improved dramatically.',
+        stars: 5,
+        avatar: '👨‍💼',
+    },
+    {
+        name: 'Zara A.',
+        university: 'University of Edinburgh',
+        subject: 'Law',
+        quote: 'As a law student, I have thousands of pages to cover. StudyBoost AI helps me identify the key principles quickly. I genuinely don\'t know how I studied without it.',
+        stars: 5,
+        avatar: '👩‍⚖️',
+    },
+];
+
+const values = [
+    { icon: '🎓', title: 'Education First', desc: 'Every decision starts with one question: does this help students learn better?' },
+    { icon: '🔓', title: 'Accessible to All', desc: 'Quality education tools should not be reserved for those who can afford expensive tutors.' },
+    { icon: '🔒', title: 'Privacy by Design', desc: 'Your notes are never stored. We built privacy into the architecture from day one.' },
+    { icon: '🚀', title: 'Continuous Innovation', desc: 'We ship new features every month, guided by student feedback and educational research.' },
+];
+
+export default function AboutPage() {
+    return (
+        <div className={styles.page}>
+            {/* Mission hero */}
+            <section className={styles.hero}>
+                <div className="container">
+                    <div className={styles.heroContent}>
+                        <div className="section-label">🌟 Our Story</div>
+                        <h1 className={styles.heroTitle}>
+                            We Built the Study Assistant <br />
+                            <span className="gradient-text">We Wished We Had at University</span>
+                        </h1>
+                        <p className={styles.heroText}>
+                            StudyBoost AI was founded in 2024 by three former students who experienced firsthand
+                            the inefficiency of traditional studying. Thousands of hours spent re-reading the same notes.
+                            Mountains of flashcards made by hand. Last-minute cramming that never worked.
+                        </p>
+                        <p className={styles.heroText}>
+                            We knew AI could change this. So we built it. Today, StudyBoost AI is used by
+                            <strong> 50,000+ students</strong> across 120+ universities worldwide — and we&apos;re
+                            just getting started.
+                        </p>
+                        <div className={styles.heroCtas}>
+                            <Link href="/ai-tools" className="btn-primary">🚀 Try StudyBoost AI Free</Link>
+                            <Link href="/contact" className="btn-outline">Get in Touch</Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Mission statement */}
+            <section className="section-sm">
+                <div className="container">
+                    <div className={styles.missionBox}>
+                        <div className={styles.missionEmoji}>🎯</div>
+                        <div>
+                            <h2 className={styles.missionTitle}>Our Mission</h2>
+                            <p className={styles.missionText}>
+                                To democratise AI-powered studying and give every university student — regardless of background, budget, or prior knowledge — the tools they need to achieve their academic potential.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Values */}
+            <section className="section">
+                <div className="container">
+                    <div className="text-center" style={{ marginBottom: '48px' }}>
+                        <div className="section-label">💡 What We Stand For</div>
+                        <h2 className="section-title">Our Core <span className="gradient-text">Values</span></h2>
+                    </div>
+                    <div className="grid-4">
+                        {values.map((v) => (
+                            <div key={v.title} className={`glass-card ${styles.valueCard}`}>
+                                <span className={styles.valueIcon}>{v.icon}</span>
+                                <h3 className={styles.valueTitle}>{v.title}</h3>
+                                <p className={styles.valueDesc}>{v.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Team */}
+            <section className="section">
+                <div className="container">
+                    <div className="text-center" style={{ marginBottom: '48px' }}>
+                        <div className="section-label">👥 The Team</div>
+                        <h2 className="section-title">Meet the People <span className="gradient-text">Behind the AI</span></h2>
+                    </div>
+                    <div className="grid-3">
+                        {team.map((m) => (
+                            <div key={m.name} className={`glass-card ${styles.teamCard}`}>
+                                <div className={styles.teamAvatar} style={{ background: `${m.color}18`, border: `2px solid ${m.color}30` }}>
+                                    <span className={styles.avatarEmoji}>{m.avatar}</span>
+                                </div>
+                                <h3 className={styles.teamName}>{m.name}</h3>
+                                <span className={styles.teamRole} style={{ color: m.color }}>{m.role}</span>
+                                <p className={styles.teamBio}>{m.bio}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Testimonials */}
+            <section className="section">
+                <div className="container">
+                    <div className="text-center" style={{ marginBottom: '48px' }}>
+                        <div className="section-label">⭐ Student Reviews</div>
+                        <h2 className="section-title">
+                            Loved by Students at <span className="gradient-text">Top Universities</span>
+                        </h2>
+                    </div>
+                    <div className="grid-3">
+                        {testimonials.map((t) => (
+                            <div key={t.name} className={`glass-card ${styles.testimonial}`}>
+                                <div className={styles.stars}>{'⭐'.repeat(t.stars)}</div>
+                                <p className={styles.quote}>&ldquo;{t.quote}&rdquo;</p>
+                                <div className={styles.reviewer}>
+                                    <span className={styles.reviewerAvatar}>{t.avatar}</span>
+                                    <div>
+                                        <div className={styles.reviewerName}>{t.name}</div>
+                                        <div className={styles.reviewerInfo}>{t.subject} · {t.university}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Stats */}
+            <section className={`section-sm ${styles.statsSection}`}>
+                <div className="container">
+                    <div className={styles.stats}>
+                        {[
+                            { num: '50K+', label: 'Students Worldwide' },
+                            { num: '120+', label: 'Universities' },
+                            { num: '2M+', label: 'AI Summaries Generated' },
+                            { num: '4.9★', label: 'Average Rating' },
+                        ].map((s) => (
+                            <div key={s.label} className={styles.stat}>
+                                <div className={styles.statNum}>{s.num}</div>
+                                <div className={styles.statLabel}>{s.label}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
+}
