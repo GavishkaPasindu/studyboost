@@ -64,6 +64,12 @@
     mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 100%);
 }
 
+[data-theme='light'] .grid {
+    background-image:
+        linear-gradient(rgba(129, 140, 248, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(129, 140, 248, 0.05) 1px, transparent 1px);
+}
+
 .scanline {
     position: absolute;
     top: 0;
@@ -311,15 +317,22 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    background: rgba(10, 10, 30, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--card);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
     border-radius: 10px;
     padding: 10px 16px;
     font-size: 0.82rem;
     font-weight: 600;
     color: var(--text-1);
     white-space: nowrap;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow-card);
+}
+
+[data-theme='light'] .floatingBadge1,
+[data-theme='light'] .floatingBadge2 {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(99, 102, 241, 0.2);
 }
 
 .floatingBadge1 {
