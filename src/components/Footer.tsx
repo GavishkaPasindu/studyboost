@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Zap, Twitter, Instagram, Linkedin, MessageCircle, Mail } from 'lucide-react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -8,17 +9,17 @@ export default function Footer() {
                 {/* Brand */}
                 <div className={styles.brand}>
                     <Link href="/" className={styles.logo}>
-                        <span className={styles.logoIcon}>⚡</span>
+                        <span className={styles.logoIcon}><Zap size={24} strokeWidth={2.5} color="#818cf8" fill="#818cf8" /></span>
                         <span>StudyBoost <strong>AI</strong></span>
                     </Link>
                     <p className={styles.tagline}>
                         Study smarter with the power of AI. Trusted by 10,000+ students worldwide.
                     </p>
                     <div className={styles.socials}>
-                        <a href="#" aria-label="Twitter" className={styles.social}>𝕏</a>
-                        <a href="#" aria-label="Instagram" className={styles.social}>📷</a>
-                        <a href="#" aria-label="LinkedIn" className={styles.social}>in</a>
-                        <a href="#" aria-label="Discord" className={styles.social}>💬</a>
+                        <a href="#" aria-label="Twitter" className={styles.social}><Twitter size={20} /></a>
+                        <a href="#" aria-label="Instagram" className={styles.social}><Instagram size={20} /></a>
+                        <a href="#" aria-label="LinkedIn" className={styles.social}><Linkedin size={20} /></a>
+                        <a href="#" aria-label="Discord" className={styles.social}><MessageCircle size={20} /></a>
                     </div>
                 </div>
 
@@ -42,7 +43,9 @@ export default function Footer() {
 
                 {/* Newsletter */}
                 <div className={styles.newsletter}>
-                    <h4>📬 Weekly Study Boost</h4>
+                    <h4 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <Mail size={20} /> Weekly Study Boost
+                    </h4>
                     <p>Get AI study tips, resources, and exclusive offers in your inbox.</p>
                     <div className={styles.form}>
                         <input

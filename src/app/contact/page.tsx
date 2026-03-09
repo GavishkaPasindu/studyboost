@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Mail, CheckCircle2, Gift, Download, Clock, Globe, Twitter, Instagram, Linkedin } from 'lucide-react';
 import styles from './ContactPage.module.css';
 
 export default function ContactPage() {
@@ -24,7 +25,7 @@ export default function ContactPage() {
         <div className={styles.page}>
             <div className={styles.header}>
                 <div className="container">
-                    <div className="section-label">📬 Get In Touch</div>
+                    <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Mail size={14} /> Get In Touch</div>
                     <h1 className={styles.title}>
                         We&apos;d Love to <span className="gradient-text">Hear From You</span>
                     </h1>
@@ -42,7 +43,7 @@ export default function ContactPage() {
                             <h2 className={styles.sectionTitle}>Send a Message</h2>
                             {submitted ? (
                                 <div className={styles.successBox}>
-                                    <span className={styles.successIcon}>✅</span>
+                                    <span className={styles.successIcon}><CheckCircle2 size={32} /></span>
                                     <h3>Message Sent!</h3>
                                     <p>Your default email client has opened with your message pre-filled. Thank you for reaching out — we&apos;ll respond within 24 hours.</p>
                                     <button className="btn-outline" onClick={() => setSubmitted(false)}>Send Another</button>
@@ -108,7 +109,7 @@ export default function ContactPage() {
                                         />
                                     </div>
                                     <button type="submit" className="btn-primary" id="contact-submit">
-                                        📨 Send Message
+                                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Mail size={18} /> Send Message</span>
                                     </button>
                                 </form>
                             )}
@@ -119,7 +120,7 @@ export default function ContactPage() {
                             {/* Lead Magnet */}
                             <div className={`glass-card ${styles.magnetCard}`}>
                                 <div className={styles.magnetHeader}>
-                                    <span className={styles.magnetEmoji}>🎁</span>
+                                    <span className={styles.magnetEmoji}><Gift size={32} color="#818cf8" strokeWidth={1.5} /></span>
                                     <div>
                                         <h3 className={styles.magnetTitle}>Free AI Study Guide</h3>
                                         <p className={styles.magnetSub}>Get our 20-page guide to mastering any subject with AI — absolutely free.</p>
@@ -127,7 +128,7 @@ export default function ContactPage() {
                                 </div>
                                 {signedUp ? (
                                     <div className={styles.signupSuccess}>
-                                        ✅ Check your inbox! The guide is on its way.
+                                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><CheckCircle2 size={16} color="#34d399" /> Check your inbox! The guide is on its way.</span>
                                     </div>
                                 ) : (
                                     <div className={styles.magnetForm}>
@@ -145,7 +146,7 @@ export default function ContactPage() {
                                             onClick={() => { if (emailSignup) setSignedUp(true); }}
                                             id="lead-magnet-btn"
                                         >
-                                            📥 Get Free Guide
+                                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Download size={18} /> Get Free Guide</span>
                                         </button>
                                     </div>
                                 )}
@@ -156,21 +157,21 @@ export default function ContactPage() {
                                 <h3 className={styles.infoTitle}>Contact Information</h3>
                                 <div className={styles.infoItems}>
                                     <div className={styles.infoItem}>
-                                        <span className={styles.infoIcon}>📧</span>
+                                        <span className={styles.infoIcon}><Mail size={24} /></span>
                                         <div>
                                             <div className={styles.infoLabel}>Email</div>
                                             <a href="mailto:hello@studyboost.ai">hello@studyboost.ai</a>
                                         </div>
                                     </div>
                                     <div className={styles.infoItem}>
-                                        <span className={styles.infoIcon}>🕐</span>
+                                        <span className={styles.infoIcon}><Clock size={24} /></span>
                                         <div>
                                             <div className={styles.infoLabel}>Response Time</div>
                                             <span>Within 24 hours</span>
                                         </div>
                                     </div>
                                     <div className={styles.infoItem}>
-                                        <span className={styles.infoIcon}>🌍</span>
+                                        <span className={styles.infoIcon}><Globe size={24} /></span>
                                         <div>
                                             <div className={styles.infoLabel}>Headquartered</div>
                                             <span>London, United Kingdom</span>
@@ -184,9 +185,9 @@ export default function ContactPage() {
                                 <h3 className={styles.infoTitle}>Follow Us</h3>
                                 <div className={styles.socials}>
                                     {[
-                                        { icon: '𝕏', label: 'Twitter / X', handle: '@StudyBoostAI' },
-                                        { icon: '📷', label: 'Instagram', handle: '@studyboostai' },
-                                        { icon: 'in', label: 'LinkedIn', handle: 'StudyBoost AI' },
+                                        { icon: <Twitter size={20} />, label: 'Twitter / X', handle: '@StudyBoostAI' },
+                                        { icon: <Instagram size={20} />, label: 'Instagram', handle: '@studyboostai' },
+                                        { icon: <Linkedin size={20} />, label: 'LinkedIn', handle: 'StudyBoost AI' },
                                     ].map((s) => (
                                         <a key={s.label} href="#" className={styles.socialItem}>
                                             <span className={styles.socialIcon}>{s.icon}</span>

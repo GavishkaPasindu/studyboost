@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { callGemini, PROMPTS } from '@/lib/gemini';
+import { FileText, BookOpen, BookMarked, Bot, KeyRound, AlertTriangle, Sparkles, CheckCircle2 } from 'lucide-react';
 import styles from './AIToolsPage.module.css';
 
 type Tool = 'summarize' | 'flashcards' | 'exam';
@@ -19,27 +20,27 @@ export default function AIToolsPage() {
     const tools = [
         {
             id: 'summarize' as Tool,
-            icon: '📝',
+            icon: <FileText size={24} />,
             label: 'Note Summariser',
             desc: 'Condense hours of lecture notes into clear, structured summaries.',
             placeholder: 'Paste your lecture notes here...\n\nExample: "The French Revolution began in 1789 when economic hardship, social inequality, and political corruption reached a breaking point..."',
-            buttonLabel: '✨ Summarise Notes',
+            buttonLabel: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Sparkles size={18} /> Summarise Notes</span>,
         },
         {
             id: 'flashcards' as Tool,
-            icon: '🃏',
+            icon: <BookOpen size={24} />,
             label: 'Flashcard Generator',
             desc: 'Generate Q&A flashcards for spaced repetition and active recall.',
             placeholder: 'Paste your lecture notes here...\n\nThe AI will extract key concepts and generate question-answer pairs perfect for revision.',
-            buttonLabel: '🃏 Generate Flashcards',
+            buttonLabel: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><BookOpen size={18} /> Generate Flashcards</span>,
         },
         {
             id: 'exam' as Tool,
-            icon: '📖',
+            icon: <BookMarked size={24} />,
             label: 'Exam Question Generator',
             desc: 'Create exam-style practice questions to test your understanding.',
             placeholder: 'Paste your lecture notes here...\n\nThe AI will generate a mix of short answer, multiple choice, and analytical questions.',
-            buttonLabel: '📖 Generate Exam Questions',
+            buttonLabel: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><BookMarked size={18} /> Generate Exam Questions</span>,
         },
     ];
 
@@ -101,7 +102,7 @@ export default function AIToolsPage() {
             {/* Page header */}
             <div className={styles.header}>
                 <div className="container">
-                    <div className="section-label">🤖 AI-Powered Tools</div>
+                    <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Bot size={14} /> AI-Powered Tools</div>
                     <h1 className={styles.title}>
                         Your AI Study <span className="gradient-text">Toolkit</span>
                     </h1>
@@ -141,8 +142,8 @@ export default function AIToolsPage() {
 
                         {!process.env.NEXT_PUBLIC_GEMINI_API_KEY && (
                             <div className={styles.keySection}>
-                                <label className={styles.keyLabel}>
-                                    🔑 Gemini API Key{' '}
+                                <label className={styles.keyLabel} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                                    <KeyRound size={16} /> Gemini API Key{' '}
                                     <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener noreferrer">
                                         (Get free key →)
                                     </a>
@@ -167,7 +168,7 @@ export default function AIToolsPage() {
                             id={`notes-input-${active}`}
                         />
 
-                        {error && <p className={styles.error}>⚠️ {error}</p>}
+                        {error && <p className={styles.error} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><AlertTriangle size={16} /> {error}</p>}
 
                         <button
                             className="btn-primary"
@@ -181,10 +182,10 @@ export default function AIToolsPage() {
 
                     <div className={styles.toolRight}>
                         <div className={styles.outputHeader}>
-                            <span className={styles.outputLabel}>
-                                {active === 'summarize' ? '📋 Summary' : active === 'flashcards' ? '🃏 Flashcards' : '📝 Practice Questions'}
+                            <span className={styles.outputLabel} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                                {active === 'summarize' ? <><FileText size={16} /> Summary</> : active === 'flashcards' ? <><BookOpen size={16} /> Flashcards</> : <><BookMarked size={16} /> Practice Questions</>}
                             </span>
-                            {output && <span className="badge badge-green">✓ Generated</span>}
+                            {output && <span className="badge badge-green" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}><CheckCircle2 size={12} /> Generated</span>}
                         </div>
 
                         {output ? (
@@ -192,7 +193,7 @@ export default function AIToolsPage() {
                         ) : (
                             <div className={styles.emptyState}>
                                 <div className={styles.emptyIcon}>
-                                    {active === 'summarize' ? '📄' : active === 'flashcards' ? '🃏' : '📖'}
+                                    {active === 'summarize' ? <FileText size={48} strokeWidth={1} /> : active === 'flashcards' ? <BookOpen size={48} strokeWidth={1} /> : <BookMarked size={48} strokeWidth={1} />}
                                 </div>
                                 <p>Your {activeTool.label} output will appear here.</p>
                                 <p>Paste notes on the left and click <strong>{activeTool.buttonLabel}</strong>.</p>

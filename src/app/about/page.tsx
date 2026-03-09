@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Sparkles, Target, Lightbulb, Users, Star, GraduationCap, Unlock, ShieldCheck, Rocket } from 'lucide-react';
 import styles from './AboutPage.module.css';
 
 export const metadata: Metadata = {
@@ -18,21 +19,21 @@ const team = [
     {
         name: 'Dr. Priya Sharma',
         role: 'Co-Founder & CEO',
-        avatar: '👩‍💻',
+        avatar: 'PS',
         bio: 'Former University of Oxford AI researcher. Priya has spent 10 years studying how students learn and applying AI to improve academic outcomes.',
         color: '#6366f1',
     },
     {
         name: 'James O\'Connor',
         role: 'Co-Founder & CTO',
-        avatar: '👨‍🔬',
+        avatar: 'JO',
         bio: 'Ex-Google engineer with a passion for building tools that matter. James architected the Gemini API integration powering all StudyBoost AI tools.',
         color: '#8b5cf6',
     },
     {
         name: 'Amara Osei',
         role: 'Head of Product & Education',
-        avatar: '👩‍🎓',
+        avatar: 'AO',
         bio: 'Former secondary school teacher turned edtech product lead. Amara ensures every feature actually improves learning outcomes for real students.',
         color: '#06b6d4',
     },
@@ -45,7 +46,7 @@ const testimonials = [
         subject: 'Medicine',
         quote: 'StudyBoost AI completely changed how I revise. I used to spend 4 hours making notes — now a 10-minute AI session gives me better summaries than I could write myself.',
         stars: 5,
-        avatar: '👩‍⚕️',
+        avatar: 'ET',
     },
     {
         name: 'Marcus K.',
@@ -53,7 +54,7 @@ const testimonials = [
         subject: 'Economics',
         quote: 'The flashcard generator is genius. I paste in my lecture slides and get 20 practice cards in seconds. My recall in exams has improved dramatically.',
         stars: 5,
-        avatar: '👨‍💼',
+        avatar: 'MK',
     },
     {
         name: 'Zara A.',
@@ -61,15 +62,15 @@ const testimonials = [
         subject: 'Law',
         quote: 'As a law student, I have thousands of pages to cover. StudyBoost AI helps me identify the key principles quickly. I genuinely don\'t know how I studied without it.',
         stars: 5,
-        avatar: '👩‍⚖️',
+        avatar: 'ZA',
     },
 ];
 
 const values = [
-    { icon: '🎓', title: 'Education First', desc: 'Every decision starts with one question: does this help students learn better?' },
-    { icon: '🔓', title: 'Accessible to All', desc: 'Quality education tools should not be reserved for those who can afford expensive tutors.' },
-    { icon: '🔒', title: 'Privacy by Design', desc: 'Your notes are never stored. We built privacy into the architecture from day one.' },
-    { icon: '🚀', title: 'Continuous Innovation', desc: 'We ship new features every month, guided by student feedback and educational research.' },
+    { icon: <GraduationCap size={28} />, title: 'Education First', desc: 'Every decision starts with one question: does this help students learn better?' },
+    { icon: <Unlock size={28} />, title: 'Accessible to All', desc: 'Quality education tools should not be reserved for those who can afford expensive tutors.' },
+    { icon: <ShieldCheck size={28} />, title: 'Privacy by Design', desc: 'Your notes are never stored. We built privacy into the architecture from day one.' },
+    { icon: <Rocket size={28} />, title: 'Continuous Innovation', desc: 'We ship new features every month, guided by student feedback and educational research.' },
 ];
 
 export default function AboutPage() {
@@ -79,7 +80,7 @@ export default function AboutPage() {
             <section className={styles.hero}>
                 <div className="container">
                     <div className={styles.heroContent}>
-                        <div className="section-label">🌟 Our Story</div>
+                        <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Sparkles size={14} /> Our Story</div>
                         <h1 className={styles.heroTitle}>
                             We Built the Study Assistant <br />
                             <span className="gradient-text">We Wished We Had at University</span>
@@ -106,7 +107,7 @@ export default function AboutPage() {
             <section className="section-sm">
                 <div className="container">
                     <div className={styles.missionBox}>
-                        <div className={styles.missionEmoji}>🎯</div>
+                        <div className={styles.missionEmoji} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Target size={40} color="#6366f1" /></div>
                         <div>
                             <h2 className={styles.missionTitle}>Our Mission</h2>
                             <p className={styles.missionText}>
@@ -121,7 +122,7 @@ export default function AboutPage() {
             <section className="section">
                 <div className="container">
                     <div className="text-center" style={{ marginBottom: '48px' }}>
-                        <div className="section-label">💡 What We Stand For</div>
+                        <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Lightbulb size={14} /> What We Stand For</div>
                         <h2 className="section-title">Our Core <span className="gradient-text">Values</span></h2>
                     </div>
                     <div className="grid-4">
@@ -140,14 +141,14 @@ export default function AboutPage() {
             <section className="section">
                 <div className="container">
                     <div className="text-center" style={{ marginBottom: '48px' }}>
-                        <div className="section-label">👥 The Team</div>
+                        <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Users size={14} /> The Team</div>
                         <h2 className="section-title">Meet the People <span className="gradient-text">Behind the AI</span></h2>
                     </div>
                     <div className="grid-3">
                         {team.map((m) => (
                             <div key={m.name} className={`glass-card ${styles.teamCard}`}>
-                                <div className={styles.teamAvatar} style={{ background: `${m.color}18`, border: `2px solid ${m.color}30` }}>
-                                    <span className={styles.avatarEmoji}>{m.avatar}</span>
+                                <div className={styles.teamAvatar} style={{ background: `${m.color}18`, border: `2px solid ${m.color}30`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                    <span className={styles.avatarEmoji} style={{ fontSize: '2rem', fontWeight: 600, color: m.color, opacity: 0.8 }}>{m.avatar}</span>
                                 </div>
                                 <h3 className={styles.teamName}>{m.name}</h3>
                                 <span className={styles.teamRole} style={{ color: m.color }}>{m.role}</span>
@@ -162,7 +163,7 @@ export default function AboutPage() {
             <section className="section">
                 <div className="container">
                     <div className="text-center" style={{ marginBottom: '48px' }}>
-                        <div className="section-label">⭐ Student Reviews</div>
+                        <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Star size={14} /> Student Reviews</div>
                         <h2 className="section-title">
                             Loved by Students at <span className="gradient-text">Top Universities</span>
                         </h2>
@@ -170,10 +171,10 @@ export default function AboutPage() {
                     <div className="grid-3">
                         {testimonials.map((t) => (
                             <div key={t.name} className={`glass-card ${styles.testimonial}`}>
-                                <div className={styles.stars}>{'⭐'.repeat(t.stars)}</div>
+                                <div className={styles.stars}>{[...Array(t.stars)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}</div>
                                 <p className={styles.quote}>&ldquo;{t.quote}&rdquo;</p>
                                 <div className={styles.reviewer}>
-                                    <span className={styles.reviewerAvatar}>{t.avatar}</span>
+                                    <div className={styles.reviewerAvatar} style={{ background: 'linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', fontWeight: 600, color: '#64748b' }}>{t.avatar}</div>
                                     <div>
                                         <div className={styles.reviewerName}>{t.name}</div>
                                         <div className={styles.reviewerInfo}>{t.subject} · {t.university}</div>

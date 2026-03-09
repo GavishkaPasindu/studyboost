@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Zap, CheckCircle2, ShieldCheck, HelpCircle, Coins } from 'lucide-react';
 import styles from './PricingPage.module.css';
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 const plans = [
     {
         name: 'Free',
-        icon: '🆓',
+        icon: <Coins size={32} />,
         price: '£0',
         per: 'forever',
         badge: null,
@@ -38,7 +39,7 @@ const plans = [
     },
     {
         name: 'Premium',
-        icon: '⚡',
+        icon: <Zap size={32} />,
         price: '£4.99',
         per: 'per month',
         badge: '🔥 Most Popular',
@@ -53,7 +54,7 @@ const plans = [
             '✅ Export to PDF',
             '✅ Study history & favourites',
         ],
-        cta: 'Upgrade Now ✨',
+        cta: 'Upgrade Now',
         ctaHref: '/contact',
         primary: true,
     },
@@ -83,7 +84,7 @@ export default function PricingPage() {
         <div className={styles.page}>
             <div className={styles.header}>
                 <div className="container">
-                    <div className="section-label">💰 Simple Pricing</div>
+                    <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Coins size={14} /> Simple Pricing</div>
                     <h1 className={styles.title}>
                         Study Smarter for <span className="gradient-text">Every Budget</span>
                     </h1>
@@ -114,7 +115,10 @@ export default function PricingPage() {
                                 <p className={styles.planDesc}>{plan.desc}</p>
                                 <ul className={styles.featureList}>
                                     {plan.features.map((f) => (
-                                        <li key={f} className={`${styles.feature} ${f.startsWith('❌') ? styles.featureNo : ''}`}>{f}</li>
+                                        <li key={f} className={`${styles.feature} ${f.startsWith('❌') ? styles.featureNo : ''}`}>
+                                            {f.startsWith('✅') && <CheckCircle2 size={16} color="#34d399" style={{ flexShrink: 0 }} />}
+                                            {f.replace(/^[✅❌]\s*/, '')}
+                                        </li>
                                     ))}
                                 </ul>
                                 <Link
@@ -130,7 +134,7 @@ export default function PricingPage() {
 
                     {/* Guarantee */}
                     <div className={styles.guarantee}>
-                        <span className={styles.guaranteeIcon}>🛡️</span>
+                        <span className={styles.guaranteeIcon}><ShieldCheck size={32} color="#10b981" /></span>
                         <div>
                             <strong>30-Day Money-Back Guarantee</strong>
                             <p>Not happy with Premium? Get a full refund within 30 days — no questions asked.</p>
@@ -143,7 +147,7 @@ export default function PricingPage() {
             <section className="section-sm">
                 <div className="container">
                     <div className="text-center" style={{ marginBottom: '48px' }}>
-                        <div className="section-label">❓ FAQ</div>
+                        <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><HelpCircle size={14} /> FAQ</div>
                         <h2 className="section-title">Frequently Asked <span className="gradient-text">Questions</span></h2>
                     </div>
                     <div className={styles.faqs}>

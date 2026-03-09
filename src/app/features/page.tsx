@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Clock, Trophy, BrainCircuit, Bot, Smartphone, ShieldCheck, Sparkles, RefreshCw, BarChart3, Library, Zap, CheckCircle2 } from 'lucide-react';
 import styles from './FeaturesPage.module.css';
 
 export const metadata: Metadata = {
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
 
 const features = [
     {
-        icon: '⏱️',
+        icon: <Clock size={24} />,
         title: 'Save Study Time',
         desc: 'Condense 3 hours of lecture notes into a 5-minute AI summary. Spend less time reading, more time understanding.',
         color: '#6366f1',
@@ -24,7 +25,7 @@ const features = [
         statLabel: 'Faster note review',
     },
     {
-        icon: '🏆',
+        icon: <Trophy size={24} />,
         title: 'Improve Exam Preparation',
         desc: "AI-generated practice questions mirror real exam formats. Identify gaps in knowledge before it's too late.",
         color: '#8b5cf6',
@@ -32,7 +33,7 @@ const features = [
         statLabel: 'Pass rate improvement',
     },
     {
-        icon: '🧠',
+        icon: <BrainCircuit size={24} />,
         title: 'Increase Learning Productivity',
         desc: 'Smart flashcards use spaced repetition principles to move information into long-term memory — scientifically proven.',
         color: '#06b6d4',
@@ -40,7 +41,7 @@ const features = [
         statLabel: 'Better retention rate',
     },
     {
-        icon: '🤖',
+        icon: <Bot size={24} />,
         title: 'Powered by Google Gemini',
         desc: "Built on Google's most advanced AI model, ensuring accurate, relevant, and high-quality study content every time.",
         color: '#f59e0b',
@@ -48,7 +49,7 @@ const features = [
         statLabel: 'Uptime reliability',
     },
     {
-        icon: '📱',
+        icon: <Smartphone size={24} />,
         title: 'Study Anywhere, Anytime',
         desc: 'Fully responsive — use StudyBoost AI on your laptop, tablet, or phone. Your AI study partner is always available.',
         color: '#10b981',
@@ -56,7 +57,7 @@ const features = [
         statLabel: 'Always available',
     },
     {
-        icon: '🔒',
+        icon: <ShieldCheck size={24} />,
         title: 'Private & Secure',
         desc: 'Your notes are never stored on our servers. All AI processing happens securely via the Gemini API directly in your browser.',
         color: '#ef4444',
@@ -78,7 +79,7 @@ export default function FeaturesPage() {
             {/* Header */}
             <div className={styles.header}>
                 <div className="container">
-                    <div className="section-label">✨ Features</div>
+                    <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Sparkles size={14} /> Features</div>
                     <h1 className={styles.title}>
                         Everything You Need to Study <span className="gradient-text">Like a Pro</span>
                     </h1>
@@ -116,7 +117,7 @@ export default function FeaturesPage() {
             <section className={`section ${styles.howSection}`}>
                 <div className="container">
                     <div className="text-center">
-                        <div className="section-label">🔄 How It Works</div>
+                        <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><RefreshCw size={14} /> How It Works</div>
                         <h2 className="section-title">
                             From Notes to <span className="gradient-text">Excellence</span> in 4 Steps
                         </h2>
@@ -138,7 +139,7 @@ export default function FeaturesPage() {
             <section className={`section-sm ${styles.compareSection}`}>
                 <div className="container">
                     <div className="text-center" style={{ marginBottom: '48px' }}>
-                        <div className="section-label">📊 StudyBoost AI vs Traditional Study</div>
+                        <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><BarChart3 size={14} /> StudyBoost AI vs Traditional Study</div>
                         <h2 className="section-title">
                             Why AI Beats <span className="gradient-text">Old-School Methods</span>
                         </h2>
@@ -146,8 +147,8 @@ export default function FeaturesPage() {
                     <div className={styles.table}>
                         <div className={styles.tableHeader}>
                             <div className={styles.tableCol}>Study Method</div>
-                            <div className={`${styles.tableCol} ${styles.colOld}`}>📚 Traditional</div>
-                            <div className={`${styles.tableCol} ${styles.colNew}`}>⚡ StudyBoost AI</div>
+                            <div className={`${styles.tableCol} ${styles.colOld}`} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Library size={18} /> Traditional</div>
+                            <div className={`${styles.tableCol} ${styles.colNew}`} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><Zap size={18} /> StudyBoost AI</div>
                         </div>
                         {[
                             ['Note Summarisation', '2–3 hours', 'Under 30 seconds'],
@@ -159,7 +160,7 @@ export default function FeaturesPage() {
                             <div key={label} className={styles.tableRow}>
                                 <div className={styles.tableCol}>{label}</div>
                                 <div className={`${styles.tableCol} ${styles.colOld}`}>{old}</div>
-                                <div className={`${styles.tableCol} ${styles.colNew}`}>✅ {neo}</div>
+                                <div className={`${styles.tableCol} ${styles.colNew}`} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><CheckCircle2 size={16} color="#34d399" /> {neo}</div>
                             </div>
                         ))}
                     </div>

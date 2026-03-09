@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Bot, Zap, Trophy, Library, Mail } from 'lucide-react';
 import styles from './BlogPage.module.css';
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
 const articles = [
     {
         slug: 'best-ai-tools-for-students',
-        emoji: '🤖',
+        emoji: <Bot size={24} />,
         category: 'AI Tools',
         date: 'March 5, 2025',
         readTime: '8 min read',
@@ -50,7 +51,7 @@ The key to academic success in 2025 is not choosing one AI tool, but building a 
     },
     {
         slug: 'how-to-study-faster-with-ai',
-        emoji: '⚡',
+        emoji: <Zap size={24} />,
         category: 'Study Strategy',
         date: 'February 20, 2025',
         readTime: '6 min read',
@@ -78,7 +79,7 @@ When you encounter a question you can't answer, use an AI chatbot (Gemini, ChatG
     },
     {
         slug: 'ai-exam-preparation-tips',
-        emoji: '🏆',
+        emoji: <Trophy size={24} />,
         category: 'Exam Prep',
         date: 'January 15, 2025',
         readTime: '7 min read',
@@ -114,7 +115,7 @@ export default function BlogPage() {
         <div className={styles.page}>
             <div className={styles.header}>
                 <div className="container">
-                    <div className="section-label">📚 Blog & Resources</div>
+                    <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Library size={14} /> Blog & Resources</div>
                     <h1 className={styles.title}>
                         Study Tips, AI Guides & <span className="gradient-text">Student Resources</span>
                     </h1>
@@ -176,7 +177,7 @@ export default function BlogPage() {
                 <div className="container">
                     <div className={`highlight-box ${styles.subscribeBox}`}>
                         <div className="text-center">
-                            <h2 className={styles.subscribeTitle}>📬 Get Weekly Study Boosts</h2>
+                            <h2 className={styles.subscribeTitle} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}><Mail size={24} /> Get Weekly Study Boosts</h2>
                             <p className={styles.subscribeSub}>
                                 Join 12,000+ students. Every week: AI study tips, new features, and exclusive resources.
                             </p>
@@ -189,7 +190,7 @@ export default function BlogPage() {
                                 />
                                 <button className="btn-primary">Subscribe Free →</button>
                             </div>
-                            <p className={styles.spamNote}>No spam. Unsubscribe anytime. 💜</p>
+                            <p className={styles.spamNote}>No spam. Unsubscribe anytime.</p>
                         </div>
                     </div>
                 </div>

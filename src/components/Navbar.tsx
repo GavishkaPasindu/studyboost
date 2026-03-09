@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTheme } from '@/context/ThemeContext';
+import { Moon, Sun, Zap } from 'lucide-react';
 import styles from './Navbar.module.css';
 
 const navLinks = [
@@ -26,7 +27,7 @@ export default function Navbar() {
             <div className={styles.inner}>
                 {/* Logo */}
                 <Link href="/" className={styles.logo} onClick={() => setOpen(false)}>
-                    <span className={styles.logoIcon}>⚡</span>
+                    <span className={styles.logoIcon}><Zap size={24} strokeWidth={2.5} color="#818cf8" fill="#818cf8" /></span>
                     <span className={styles.logoText}>
                         StudyBoost <span className={styles.logoAI}>AI</span>
                     </span>
@@ -55,14 +56,14 @@ export default function Navbar() {
                 >
                     <span className={styles.toggleTrack}>
                         <span className={styles.toggleThumb}>
-                            {theme === 'dark' ? '🌙' : '☀️'}
+                            {theme === 'dark' ? <Moon size={14} /> : <Sun size={14} />}
                         </span>
                     </span>
                 </button>
 
                 {/* CTA */}
                 <Link href="/ai-tools" className={`btn-primary btn-sm ${styles.cta}`}>
-                    Try Free ✨
+                    Try Free
                 </Link>
 
                 {/* Hamburger */}
@@ -88,17 +89,17 @@ export default function Navbar() {
                     </Link>
                 ))}
                 <div className={styles.mobileThemeRow}>
-                    <span className={styles.mobileThemeLabel}>
-                        {theme === 'dark' ? '🌙 Dark Mode' : '☀️ Light Mode'}
+                    <span className={styles.mobileThemeLabel} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        {theme === 'dark' ? <><Moon size={16} /> Dark Mode</> : <><Sun size={16} /> Light Mode</>}
                     </span>
                     <button className={styles.themeToggle} onClick={toggleTheme} aria-label="Toggle theme">
                         <span className={styles.toggleTrack}>
-                            <span className={styles.toggleThumb}>{theme === 'dark' ? '🌙' : '☀️'}</span>
+                            <span className={styles.toggleThumb}>{theme === 'dark' ? <Moon size={14} /> : <Sun size={14} />}</span>
                         </span>
                     </button>
                 </div>
                 <Link href="/ai-tools" className="btn-primary" onClick={() => setOpen(false)}>
-                    Try Free ✨
+                    Try Free
                 </Link>
             </div>
         </nav>
