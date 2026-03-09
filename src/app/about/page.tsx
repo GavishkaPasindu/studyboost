@@ -17,24 +17,24 @@ export const metadata: Metadata = {
 
 const team = [
     {
-        name: 'Dr. Priya Sharma',
-        role: 'Co-Founder & CEO',
-        avatar: 'PS',
-        bio: 'Former AI researcher and software engineer. Priya has spent 10 years studying how students learn and applying AI to improve academic outcomes.',
+        name: 'Gavishka Pasindu',
+        role: 'Founder & Lead Developer',
+        avatar: 'GP',
+        bio: 'A passionate developer from IIT with a vision to make studying more efficient through AI. Gavishka leads the technical roadmap for StudyBoost.',
         color: '#6366f1',
     },
     {
-        name: 'James O\'Connor',
-        role: 'Co-Founder & CTO',
-        avatar: 'JO',
-        bio: 'Ex-Google engineer with a passion for building tools that matter. James architected the AI integration powering all StudyBoost AI tools.',
+        name: 'Pasindu Chadika',
+        role: 'Co-Founder & UI Designer',
+        avatar: 'PC',
+        bio: 'A creative mind from SLIIT specializing in user experience. Pasindu ensures that StudyBoost AI is intuitive and accessible for all students.',
         color: '#8b5cf6',
     },
     {
-        name: 'Amara Osei',
-        role: 'Head of Product & Education',
-        avatar: 'AO',
-        bio: 'Former secondary school teacher turned edtech product lead. Amara ensures every feature actually improves learning outcomes for real students.',
+        name: 'Ganusha Abilasha',
+        role: 'Co-Founder & Student Outreach',
+        avatar: 'GA',
+        bio: 'A dedicated student from NSBM focused on building student communities. Ganusha leads our outreach programs across universities.',
         color: '#06b6d4',
     },
 ];
