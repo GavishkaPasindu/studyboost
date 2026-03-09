@@ -19,7 +19,7 @@ const plans = [
     {
         name: 'Free',
         icon: <Coins size={32} />,
-        price: '£0',
+        price: '$0',
         per: 'forever',
         badge: null,
         desc: 'Perfect for trying out AI-powered studying with no commitment.',
@@ -40,7 +40,8 @@ const plans = [
     {
         name: 'Premium',
         icon: <Zap size={32} />,
-        price: '£4.99',
+        oldPrice: '$10',
+        price: '$4.99',
         per: 'per month',
         badge: '🔥 Most Popular',
         desc: 'For serious students who want unlimited AI study power across all tools.',
@@ -109,6 +110,7 @@ export default function PricingPage() {
                                     <h2 className={styles.planName}>{plan.name}</h2>
                                 </div>
                                 <div className={styles.priceRow}>
+                                    {plan.oldPrice && <span className={styles.oldPrice}>{plan.oldPrice}</span>}
                                     <span className={styles.price}>{plan.price}</span>
                                     <span className={styles.per}>/{plan.per}</span>
                                 </div>
