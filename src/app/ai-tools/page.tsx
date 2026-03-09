@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { callGemini, PROMPTS } from '@/lib/gemini';
-import { FileText, BookOpen, BookMarked, Bot, KeyRound, AlertTriangle, Sparkles, CheckCircle2 } from 'lucide-react';
+import { FileText, BookOpen, BookMarked, Bot, AlertTriangle, Sparkles, CheckCircle2, Download } from 'lucide-react';
 import styles from './AIToolsPage.module.css';
 
 type Tool = 'summarize' | 'flashcards' | 'exam';
@@ -13,8 +13,8 @@ export default function AIToolsPage() {
     const [output, setOutput] = useState('');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
-    const [apiKey, setApiKey] = useState(
-        typeof window !== 'undefined' ? localStorage.getItem('sb_gemini_key') || '' : ''
+    const [apiKey] = useState(
+        typeof window !== 'undefined' ? process.env.NEXT_PUBLIC_GEMINI_API_KEY || '' : ''
     );
 
     const tools = [
@@ -53,7 +53,6 @@ export default function AIToolsPage() {
         setOutput('');
         try {
             const key = apiKey || process.env.NEXT_PUBLIC_GEMINI_API_KEY || '';
-            if (apiKey) localStorage.setItem('sb_gemini_key', apiKey);
             const prompt =
                 active === 'summarize'
                     ? PROMPTS.summarize(notes)
@@ -73,6 +72,29 @@ export default function AIToolsPage() {
         setActive(id);
         setOutput('');
         setError('');
+    }
+
+    function handleDownloadTXT() {
+        if (!output) return;
+
+        try {
+            // The output is already plain text containing the markdown/gemini response, so we can save it directly
+            const blob = new Blob([output], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `StudyBoost-${active}-output.txt`;
+            document.body.appendChild(link);
+            link.click();
+
+            // Cleanup
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        } catch (err) {
+            console.error('Error generating TXT:', err);
+            setError('Failed to generate TXT file. Please try again.');
+        }
     }
 
     function renderOutput() {
@@ -140,24 +162,7 @@ export default function AIToolsPage() {
                             </div>
                         </div>
 
-                        {!process.env.NEXT_PUBLIC_GEMINI_API_KEY && (
-                            <div className={styles.keySection}>
-                                <label className={styles.keyLabel} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                                    <KeyRound size={16} /> Gemini API Key{' '}
-                                    <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener noreferrer">
-                                        (Get free key →)
-                                    </a>
-                                </label>
-                                <input
-                                    type="password"
-                                    placeholder="Paste your Gemini API key here"
-                                    className="input-field"
-                                    value={apiKey}
-                                    onChange={(e) => setApiKey(e.target.value)}
-                                    id="ai-tools-api-key"
-                                />
-                            </div>
-                        )}
+
 
                         <textarea
                             className={`input-field ${styles.textarea}`}
@@ -189,7 +194,21 @@ export default function AIToolsPage() {
                         </div>
 
                         {output ? (
-                            renderOutput()
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                                <div id="ai-output-content" style={{ padding: '8px', background: 'transparent' }}>
+                                    {renderOutput()}
+                                </div>
+                                <div style={{ display: 'flex', justifyContent: 'center', marginTop: '8px', marginBottom: '16px' }}>
+                                    <button
+                                        onClick={handleDownloadTXT}
+                                        className="btn-outline"
+                                        style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+                                        title="Download as TXT"
+                                    >
+                                        <Download size={18} /> Download TXT file
+                                    </button>
+                                </div>
+                            </div>
                         ) : (
                             <div className={styles.emptyState}>
                                 <div className={styles.emptyIcon}>
