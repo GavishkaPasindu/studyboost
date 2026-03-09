@@ -16,7 +16,7 @@ export default function ContactPage() {
 
     function handleSubmit(e: React.FormEvent) {
         e.preventDefault();
-        const mailto = `mailto:hello@studyboost.ai?subject=${encodeURIComponent(form.subject || 'Message from ' + form.name)}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`;
+        const mailto = `mailto:gavishka.20220340@iit.ac.lk?subject=${encodeURIComponent(form.subject || 'Message from ' + form.name)}&body=${encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`)}`;
         window.location.href = mailto;
         setSubmitted(true);
     }
@@ -160,7 +160,7 @@ export default function ContactPage() {
                                         <span className={styles.infoIcon}><Mail size={24} /></span>
                                         <div>
                                             <div className={styles.infoLabel}>Email</div>
-                                            <a href="mailto:hello@studyboost.ai">hello@studyboost.ai</a>
+                                            <a href="mailto:gavishka.20220340@iit.ac.lk">gavishka.20220340@iit.ac.lk</a>
                                         </div>
                                     </div>
                                     <div className={styles.infoItem}>
