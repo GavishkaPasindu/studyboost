@@ -13,7 +13,7 @@ export default function Footer() {
                         <span>StudyBoost <strong>AI</strong></span>
                     </Link>
                     <p className={styles.tagline}>
-                        Empowering university students to study smarter nationwide.
+                        Empowering university students to study smarter worldwide.
                     </p>
                     <div className={styles.socials}>
                         <a href="#" aria-label="Twitter" className={styles.social}><Twitter size={20} /></a>

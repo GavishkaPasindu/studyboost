@@ -127,7 +127,7 @@ export default function HomePage() {
                 <span className="gradient-text">Understands Your Notes</span>
               </h1>
               <p className={styles.heroSub} data-reveal data-delay="200">
-                Transform any lecture notes into AI summaries, smart flashcards, and exam-ready practice questions in seconds. Trusted by <strong>university students</strong> nationwide.
+                Transform any lecture notes into AI summaries, smart flashcards, and exam-ready practice questions in seconds. Trusted by <strong>university students</strong> worldwide.
               </p>
               <div className={styles.heroCtas} data-reveal data-delay="300">
                 <Link href="/ai-tools" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Rocket size={18} /> Try It Free - No Signup</Link>

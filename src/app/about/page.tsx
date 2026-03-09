@@ -92,7 +92,7 @@ export default function AboutPage() {
                         </p>
                         <p className={styles.heroText}>
                             We knew AI could change this. So we built it. Today, StudyBoost AI is used by
-                            <strong> thousands of students</strong> across universities nationwide - and we&apos;re
+                            <strong> thousands of students</strong> across universities worldwide - and we&apos;re
                             just getting started.
                         </p>
                         <div className={styles.heroCtas}>
