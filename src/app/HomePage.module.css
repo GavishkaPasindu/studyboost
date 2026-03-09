@@ -183,7 +183,7 @@
     border: 1px solid rgba(129, 140, 248, 0.25);
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px var(--border);
     width: 100%;
     max-width: 460px;
     animation: float 6s ease-in-out infinite;
@@ -195,7 +195,7 @@
     gap: 12px;
     padding: 14px 20px;
     background: rgba(255, 255, 255, 0.03);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid var(--border);
 }
 
 .mockupDots {
@@ -225,7 +225,7 @@
 
 .mockupInput {
     background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--border);
     border-radius: 10px;
     padding: 14px;
 }
@@ -333,8 +333,8 @@
 /* ─── Trust Bar ─── */
 .trustBar {
     padding: 36px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .trustLabel {
@@ -357,7 +357,7 @@
 .uniChip {
     padding: 6px 16px;
     background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border: 1px solid var(--border);
     border-radius: 999px;
     font-size: 0.82rem;
     color: #475569;
@@ -427,7 +427,7 @@
     gap: 24px;
     margin-bottom: 20px;
     padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    border-top: 1px solid var(--border);
 }
 
 .featStat {
@@ -739,7 +739,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 0;
     background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border);
     border-radius: 20px;
     overflow: hidden;
 }
@@ -747,7 +747,7 @@
 .statItem {
     padding: 40px 28px;
     text-align: center;
-    border-right: 1px solid rgba(255, 255, 255, 0.06);
+    border-right: 1px solid var(--border);
     transition: background 0.2s;
 }
 
@@ -817,7 +817,7 @@
     align-items: center;
     gap: 14px;
     padding-top: 16px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid var(--border);
 }
 
 .tAvatar {
