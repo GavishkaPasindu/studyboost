@@ -6,7 +6,7 @@ import styles from './AboutPage.module.css';
 export const metadata: Metadata = {
     title: 'About – StudyBoost AI',
     description:
-        'Learn about StudyBoost AI: our mission to help every student study smarter with AI, meet our team, and read real student testimonials.',
+        'Learn about StudyBoost AI: our mission to help every student study smarter with AI, meet our team, and read student reviews.',
     keywords: [
         'about AI study assistant',
         'AI learning platform',
@@ -20,7 +20,7 @@ const team = [
         name: 'Dr. Priya Sharma',
         role: 'Co-Founder & CEO',
         avatar: 'PS',
-        bio: 'Former University of Oxford AI researcher. Priya has spent 10 years studying how students learn and applying AI to improve academic outcomes.',
+        bio: 'Former AI researcher and software engineer. Priya has spent 10 years studying how students learn and applying AI to improve academic outcomes.',
         color: '#6366f1',
     },
     {
@@ -42,25 +42,25 @@ const team = [
 const testimonials = [
     {
         name: 'Emily T.',
-        university: 'University of Manchester',
-        subject: 'Medicine',
+        university: 'SLIIT',
+        subject: 'Software Engineering',
         quote: 'StudyBoost AI completely changed how I revise. I used to spend 4 hours making notes; now a 10-minute AI session gives me better summaries than I could write myself.',
         stars: 5,
         avatar: 'ET',
     },
     {
         name: 'Marcus K.',
-        university: 'London School of Economics',
-        subject: 'Economics',
+        university: 'IIT',
+        subject: 'Computer Science',
         quote: 'The flashcard generator is genius. I paste in my lecture slides and get 20 practice cards in seconds. My recall in exams has improved dramatically.',
         stars: 5,
         avatar: 'MK',
     },
     {
         name: 'Zara A.',
-        university: 'University of Edinburgh',
-        subject: 'Law',
-        quote: 'As a law student, I have thousands of pages to cover. StudyBoost AI helps me identify the key principles quickly. I genuinely don\'t know how I studied without it.',
+        university: 'NSBM',
+        subject: 'Business Analytics',
+        quote: 'As a student, I have thousands of pages to cover. StudyBoost AI helps me identify the key principles quickly. I genuinely don\'t know how I studied without it.',
         stars: 5,
         avatar: 'ZA',
     },
@@ -92,7 +92,7 @@ export default function AboutPage() {
                         </p>
                         <p className={styles.heroText}>
                             We knew AI could change this. So we built it. Today, StudyBoost AI is used by
-                            <strong> 50,000+ students</strong> across 120+ universities worldwide — and we&apos;re
+                            <strong> thousands of students</strong> across universities nationwide - and we&apos;re
                             just getting started.
                         </p>
                         <div className={styles.heroCtas}>
@@ -191,10 +191,10 @@ export default function AboutPage() {
                 <div className="container">
                     <div className={styles.stats}>
                         {[
-                            { num: '50K+', label: 'Students Worldwide' },
-                            { num: '120+', label: 'Universities' },
-                            { num: '2M+', label: 'AI Summaries Generated' },
-                            { num: '4.9★', label: 'Average Rating' },
+                            { num: 'Top', label: 'Student Support' },
+                            { num: 'High', label: 'Satisfaction' },
+                            { num: '10K+', label: 'AI Summaries Generated' },
+                            { num: 'Elite', label: 'Study Tools' },
                         ].map((s) => (
                             <div key={s.label} className={styles.stat}>
                                 <div className={styles.statNum}>{s.num}</div>

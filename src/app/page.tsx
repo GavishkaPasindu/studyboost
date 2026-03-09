@@ -7,7 +7,7 @@ import { Zap, BookOpen, Target, ClipboardList, Settings2, Sparkles, Trophy, Shie
 import useScrollReveal from '@/hooks/useScrollReveal';
 import styles from './HomePage.module.css';
 
-const UNIVERSITIES = ['Oxford', 'Cambridge', 'LSE', 'UCL', 'Imperial', 'Edinburgh', 'Manchester', 'Bristol', 'Durham', 'Warwick'];
+const UNIVERSITIES = ['SLIIT', 'IIT', 'NSBM', 'KDU', 'UoM', 'UoK', 'UoP', 'UoJ', 'OUSL', 'CINEC'];
 
 const FEATURES = [
   {
@@ -54,18 +54,18 @@ const getAvatar = (initials: string, color1: string, color2: string) => (
 
 const TESTIMONIALS = [
   {
-    avatar: getAvatar('ET', '#818cf8', '#38bdf8'), name: 'Emily T.', year: '3rd Year Medicine', uni: 'University of Manchester',
+    avatar: getAvatar('ET', '#818cf8', '#38bdf8'), name: 'Emily T.', year: 'Software Engineering Support', uni: 'SLIIT',
     quote: 'I used to spend my entire Sunday making flashcards. Now I paste my lecture slides in on Sunday morning and my cards are done in 2 minutes. I can\'t imagine going back.',
     stars: 5,
   },
   {
-    avatar: getAvatar('MK', '#34d399', '#059669'), name: 'Marcus K.', year: 'MSc Economics', uni: 'London School of Economics',
-    quote: 'The exam question generator is incredible. It predicted 3 out of 5 topics that actually came up in my macro exam. My grade jumped from a 2:2 to a First.',
+    avatar: getAvatar('MK', '#34d399', '#059669'), name: 'Marcus K.', year: 'Computer Science Student', uni: 'IIT',
+    quote: 'The exam question generator is incredible. It predicted several key topics that actually came up in my algorithm final. My grades have improved significantly.',
     stars: 5,
   },
   {
-    avatar: getAvatar('ZA', '#fb923c', '#ea580c'), name: 'Zara A.', year: '2nd Year Law', uni: 'University of Edinburgh',
-    quote: 'Law has thousands of cases to memorise. StudyBoost AI summarises each case into a structured 5-bullet format. My note quality has improved beyond recognition.',
+    avatar: getAvatar('ZA', '#fb923c', '#ea580c'), name: 'Zara A.', year: 'Management Information Systems', uni: 'NSBM',
+    quote: 'Complex business modules have thousands of details to memorise. StudyBoost AI summarises each slide into a structured format. My note quality has improved massively.',
     stars: 5,
   },
 ];
@@ -127,7 +127,7 @@ export default function HomePage() {
                 <span className="gradient-text">Understands Your Notes</span>
               </h1>
               <p className={styles.heroSub} data-reveal data-delay="200">
-                Transform any lecture notes into AI summaries, smart flashcards, and exam-ready practice questions in seconds. Trusted by <strong>50,000+ university students</strong> worldwide.
+                Transform any lecture notes into AI summaries, smart flashcards, and exam-ready practice questions in seconds. Trusted by <strong>university students</strong> nationwide.
               </p>
               <div className={styles.heroCtas} data-reveal data-delay="300">
                 <Link href="/ai-tools" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Rocket size={18} /> Try It Free - No Signup</Link>
@@ -171,10 +171,10 @@ export default function HomePage() {
                 </div>
               </div>
               <div className={styles.floatingBadge1} style={{ top: '10%', right: '-12%' }}>
-                <span><Trophy size={16} color="#fbbf24" style={{ display: 'block' }} /></span> 50K+ Students
+                <span><Trophy size={16} color="#fbbf24" style={{ display: 'block' }} /></span> Top Rated
               </div>
               <div className={styles.floatingBadge2} style={{ bottom: '15%', left: '-10%' }}>
-                <span><CheckCircle2 size={16} color="#34d399" style={{ display: 'block' }} /></span> 4.9 Rating
+                <span><CheckCircle2 size={16} color="#34d399" style={{ display: 'block' }} /></span> Student Trusted
               </div>
             </div>
           </div>
@@ -340,10 +340,10 @@ export default function HomePage() {
         <div className="container">
           <div className={styles.statsGrid} data-reveal>
             {[
-              { val: '50,000+', label: 'Active Students', icon: <Trophy size={24} /> },
-              { val: '2M+', label: 'AI Summaries Created', icon: <Zap size={24} /> },
-              { val: '92%', label: 'Pass Rate Improvement', icon: <TrendingUp size={24} /> },
-              { val: '4.9 ★', label: 'Average Student Rating', icon: <Star size={24} fill="currentColor" /> },
+              { val: '1,000+', label: 'Active Students', icon: <Trophy size={24} /> },
+              { val: '10,000+', label: 'AI Summaries Created', icon: <Zap size={24} /> },
+              { val: 'Ace', label: 'Your Exam Goals', icon: <TrendingUp size={24} /> },
+              { val: 'High', label: 'Student Satisfaction', icon: <Star size={24} fill="currentColor" /> },
             ].map((s) => (
               <div key={s.label} className={styles.statItem}>
                 <span className={styles.statIcon}>{s.icon}</span>
@@ -361,7 +361,7 @@ export default function HomePage() {
           <div className="text-center" data-reveal>
             <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><MessageSquare size={14} /> Student Reviews</div>
             <h2 className="section-title">Real Students. <span className="gradient-text">Real Results.</span></h2>
-            <p className="section-subtitle mx-auto">Don&apos;t take our word for it. See what students at top UK universities are saying.</p>
+            <p className="section-subtitle mx-auto">Don&apos;t take our word for it. See what students at top universities are saying.</p>
           </div>
           <div className="grid-3">
             {TESTIMONIALS.map((t, i) => (
@@ -394,7 +394,7 @@ export default function HomePage() {
               <div>
                 <div className="section-label" style={{ marginBottom: '12px' }}>Free Download</div>
                 <h3 className={styles.magnetTitle}>Get the Ultimate AI Study Guide: Free</h3>
-                <p className={styles.magnetSub}>Our 28-page PDF covers the best AI study techniques, exam prep strategies, and exactly how to use StudyBoost AI to maximise your grades. Downloaded by 12,000+ students.</p>
+                <p className={styles.magnetSub}>Our 28-page PDF covers the best AI study techniques, exam prep strategies, and exactly how to use StudyBoost AI to maximise your grades. Downloaded by thousands of students.</p>
               </div>
             </div>
             <Link href="/contact" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Download size={18} /> Download Free Guide</Link>
@@ -412,7 +412,7 @@ export default function HomePage() {
               Your Next Exam. <span className="gradient-text">Your Best Result.</span>
             </h2>
             <p className={styles.ctaSub}>
-              Join 50,000 students already using AI to study smarter. Free tier always available. No credit card. No excuses.
+              Join thousands of students already using AI to study smarter. Free tier always available. No credit card. No excuses.
             </p>
             <div className={styles.ctaBtns}>
               <Link href="/ai-tools" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Rocket size={18} /> Start Free Now</Link>
