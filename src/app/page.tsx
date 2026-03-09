@@ -15,25 +15,25 @@ const FEATURES = [
     badge: 'Most Popular',
     badgeColor: 'badge-purple',
     title: 'AI Note Summariser',
-    desc: 'Transform 50 pages of dense lecture notes into a clean, bullet-pointed summary in under 30 seconds. Our AI understands academic language — from biology to business law.',
+    desc: 'Transform 50 pages of dense lecture notes into a clean, bullet-pointed summary in under 30 seconds. Our AI understands academic language from biology to business law.',
     stats: [{ val: '80%', label: 'Time saved' }, { val: '30s', label: 'Average time' }],
     color: '#818cf8',
   },
   {
-    icon: <BookOpen size={28} />,
-    badge: 'Fan Favourite',
+    icon: <BookOpen size={28} />, // Added icon for consistency
+    badge: 'Study Smart',
     badgeColor: 'badge-sky',
-    title: 'Smart Flashcard Generator',
-    desc: 'Automatically generate quiz-ready flashcards with questions on one side and detailed answers on the other. Based on spaced-repetition science for maximum retention.',
-    stats: [{ val: '3×', label: 'Better retention' }, { val: '5 cards', label: 'In seconds' }],
-    color: '#38bdf8',
+    title: 'Flashcard Generator',
+    desc: 'Convert complex topics into bite-sized questions and answers. Perfect for reviewing medicine, engineering or long historical timelines.',
+    stats: [{ val: '100+', label: 'Cards/min' }, { val: '2x', label: 'Retention rate' }],
+    color: '#60a5fa',
   },
   {
     icon: <Target size={28} />,
     badge: 'Exam Ready',
     badgeColor: 'badge-green',
     title: 'Exam Question Generator',
-    desc: 'Generate realistic exam-style questions from your own notes — multiple choice, short answer and analytical. Know exactly where your knowledge gaps are before the exam.',
+    desc: 'Generate realistic exam-style questions from your own notes - multiple choice, short answer and analytical. Know exactly where your knowledge gaps are before the exam.',
     stats: [{ val: '92%', label: 'Pass rate boost' }, { val: '4 types', label: 'Question formats' }],
     color: '#34d399',
   },
@@ -72,8 +72,8 @@ const TESTIMONIALS = [
 
 const MINI_FEATURES = [
   { icon: <ShieldCheck size={28} />, title: 'Zero Data Storage', desc: 'Your notes are never saved on our servers. Everything is processed via the Gemini API in real-time.' },
-  { icon: <Smartphone size={28} />, title: 'Any Device', desc: 'Fully responsive design. Use StudyBoost on your laptop, tablet, or phone — anywhere, any time.' },
-  { icon: <Globe size={28} />, title: 'All Subjects', desc: 'Medicine, Law, Engineering, Economics, History — the AI adapts to any academic subject instantly.' },
+  { icon: <Smartphone size={28} />, title: 'Any Device', desc: 'Fully responsive design. Use StudyBoost on your laptop, tablet, or phone - anywhere, any time.' },
+  { icon: <Globe size={28} />, title: 'All Subjects', desc: 'Medicine, Law, Engineering, Economics, History - the AI adapts to any academic subject instantly.' },
   { icon: <RefreshCw size={28} />, title: 'Spaced Repetition', desc: 'Flashcard structure based on the proven Leitner spaced repetition system for long-term memory.' },
   { icon: <Zap size={28} />, title: 'Instant Results', desc: 'No waiting. No queuing. AI-generated study content delivered in under 10 seconds every time.' },
   { icon: <BadgeDollarSign size={28} />, title: 'Free to Start', desc: 'Full access to all three AI tools completely free. No credit card. No commitment.' },
@@ -127,10 +127,10 @@ export default function HomePage() {
                 <span className="gradient-text">Understands Your Notes</span>
               </h1>
               <p className={styles.heroSub} data-reveal data-delay="200">
-                Transform any lecture notes into AI summaries, smart flashcards, and exam-ready practice questions — in seconds. Trusted by <strong>50,000+ university students</strong> worldwide.
+                Transform any lecture notes into AI summaries, smart flashcards, and exam-ready practice questions in seconds. Trusted by <strong>50,000+ university students</strong> worldwide.
               </p>
               <div className={styles.heroCtas} data-reveal data-delay="300">
-                <Link href="/ai-tools" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Rocket size={18} /> Try It Free — No Signup</Link>
+                <Link href="/ai-tools" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Rocket size={18} /> Try It Free - No Signup</Link>
                 <Link href="/features" className="btn-ghost">See All Features →</Link>
               </div>
               <div className={styles.heroTrust} data-reveal data-delay="400">
@@ -148,7 +148,7 @@ export default function HomePage() {
                     <span style={{ background: '#febc2e' }} />
                     <span style={{ background: '#28c840' }} />
                   </div>
-                  <span className={styles.mockupTitle}>StudyBoost AI — Summariser</span>
+                  <span className={styles.mockupTitle}>StudyBoost AI: Summariser</span>
                 </div>
                 <div className={styles.mockupBody}>
                   <div className={styles.mockupInput}>
@@ -199,7 +199,7 @@ export default function HomePage() {
           <div className="text-center" data-reveal>
             <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Sparkles size={14} /> AI Tools</div>
             <h2 className="section-title">Three Powerful AI Tools.<br /><span className="gradient-text">One Smarter Student.</span></h2>
-            <p className="section-subtitle mx-auto">Every tool is designed around how students actually study — not how textbooks think you should study.</p>
+            <p className="section-subtitle mx-auto">Every tool is designed around how students actually study, not how textbooks think you should study.</p>
           </div>
           <div className={styles.featGrid}>
             {FEATURES.map((f, i) => (
@@ -260,7 +260,7 @@ export default function HomePage() {
           <div className="text-center" data-reveal>
             <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Radio size={14} color="#ef4444" /> Live Demo</div>
             <h2 className="section-title">Try AI Summarisation <span className="gradient-text">Right Now</span></h2>
-            <p className="section-subtitle mx-auto">Paste any text below — lecture notes, a paragraph from a textbook, anything. Watch the AI work.</p>
+            <p className="section-subtitle mx-auto">Paste any text below: lecture notes, a paragraph from a textbook, anything. Watch the AI work.</p>
           </div>
           <div className={styles.demoWrap}>
             <div className={styles.demoLeft} data-reveal="left">
@@ -280,7 +280,7 @@ export default function HomePage() {
                   {loading ? <><span className="spinner" /> Generating...</> : <><Zap size={18} /> Generate AI Summary</>}
                 </button>
                 {!apiKey && (
-                  <p className={styles.keyNote} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><AlertTriangle size={14} /> API key not set — <Link href="/contact">contact us</Link> or add key to .env.local</p>
+                  <p className={styles.keyNote} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><AlertTriangle size={14} /> API key not set: <Link href="/contact">contact us</Link> or add key to .env.local</p>
                 )}
               </div>
             </div>
@@ -393,7 +393,7 @@ export default function HomePage() {
               <div className={styles.magnetEmoji}><Library size={48} color="#818cf8" strokeWidth={1.5} /></div>
               <div>
                 <div className="section-label" style={{ marginBottom: '12px' }}>Free Download</div>
-                <h3 className={styles.magnetTitle}>Get the Ultimate AI Study Guide — Free</h3>
+                <h3 className={styles.magnetTitle}>Get the Ultimate AI Study Guide: Free</h3>
                 <p className={styles.magnetSub}>Our 28-page PDF covers the best AI study techniques, exam prep strategies, and exactly how to use StudyBoost AI to maximise your grades. Downloaded by 12,000+ students.</p>
               </div>
             </div>

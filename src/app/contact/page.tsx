@@ -30,7 +30,7 @@ export default function ContactPage() {
                         We&apos;d Love to <span className="gradient-text">Hear From You</span>
                     </h1>
                     <p className={styles.subtitle}>
-                        Questions, feedback, or partnership inquiries — we&apos;re here to help students study smarter.
+                        Questions, feedback, or partnership inquiries: we&apos;re here to help students study smarter.
                     </p>
                 </div>
             </div>
@@ -45,7 +45,7 @@ export default function ContactPage() {
                                 <div className={styles.successBox}>
                                     <span className={styles.successIcon}><CheckCircle2 size={32} /></span>
                                     <h3>Message Sent!</h3>
-                                    <p>Your default email client has opened with your message pre-filled. Thank you for reaching out — we&apos;ll respond within 24 hours.</p>
+                                    <p>Your default email client has opened with your message pre-filled. Thank you for reaching out - we&apos;ll respond within 24 hours.</p>
                                     <button className="btn-outline" onClick={() => setSubmitted(false)}>Send Another</button>
                                 </div>
                             ) : (

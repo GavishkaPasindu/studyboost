@@ -35,7 +35,7 @@ const features = [
     {
         icon: <BrainCircuit size={24} />,
         title: 'Increase Learning Productivity',
-        desc: 'Smart flashcards use spaced repetition principles to move information into long-term memory — scientifically proven.',
+        desc: 'Smart flashcards use spaced repetition principles to move information into long-term memory. This is scientifically proven.',
         color: '#06b6d4',
         stat: '3×',
         statLabel: 'Better retention rate',
@@ -51,7 +51,7 @@ const features = [
     {
         icon: <Smartphone size={24} />,
         title: 'Study Anywhere, Anytime',
-        desc: 'Fully responsive — use StudyBoost AI on your laptop, tablet, or phone. Your AI study partner is always available.',
+        desc: 'Fully responsive: use StudyBoost AI on your laptop, tablet, or phone. Your AI study partner is always available.',
         color: '#10b981',
         stat: '24/7',
         statLabel: 'Always available',
@@ -69,7 +69,7 @@ const features = [
 const steps = [
     { num: '01', title: 'Paste Your Notes', desc: 'Copy and paste any lecture notes, textbook excerpts, or study material.' },
     { num: '02', title: 'Choose Your Tool', desc: 'Select summarise, flashcards, or exam questions based on what you need.' },
-    { num: '03', title: 'Get Instant Results', desc: 'AI generates your study material in seconds — ready to use immediately.' },
+    { num: '03', title: 'Get Instant Results', desc: 'AI generates your study material in seconds - ready to use immediately.' },
     { num: '04', title: 'Ace Your Exams', desc: 'Use your AI-generated study content to study efficiently and confidently.' },
 ];
 

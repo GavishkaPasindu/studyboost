@@ -31,20 +31,20 @@ const articles = [
         content: `
 The landscape of academic study has been completely transformed by artificial intelligence. In 2025, students who leverage AI tools have a significant advantage over those who rely on traditional methods alone.
 
-**1. StudyBoost AI — Note Summarisation & Flashcards**
-StudyBoost AI leads the pack as the most comprehensive AI study assistant for university students. With its three-in-one toolkit — note summariser, flashcard generator, and exam question creator — it covers every stage of the study cycle.
+**1. StudyBoost AI: Note Summarisation & Flashcards**
+StudyBoost AI leads the pack as the most comprehensive AI study assistant for university students. With its three-in-one toolkit (note summariser, flashcard generator, and exam question creator) it covers every stage of the study cycle.
 
-**2. Google Gemini — Advanced Question Answering**
+**2. Google Gemini: Advanced Question Answering**
 Google Gemini's multimodal capabilities make it excellent for explaining complex concepts, solving equations, and even interpreting diagrams from textbooks.
 
-**3. Anki with AI Plugins — Optimised Spaced Repetition**
+**3. Anki with AI Plugins: Optimised Spaced Repetition**
 Traditional Anki supercharged with AI plugins can automatically generate cards from your notes and optimise the review schedule based on your performance.
 
-**4. ChatGPT — Essay Planning & Brainstorming**
+**4. ChatGPT: Essay Planning & Brainstorming**
 While not specialised for studying, ChatGPT remains powerful for essay planning, brainstorming arguments, and getting explanations in plain language.
 
-**5. Elicit — Academic Research Assistant**
-Elicit helps students find academic papers, extract key claims, and summarise research — invaluable for literature reviews.
+**5. Elicit: Academic Research Assistant**
+Elicit helps students find academic papers, extract key claims, and summarise research. This is invaluable for literature reviews.
 
 The key to academic success in 2025 is not choosing one AI tool, but building a personalised AI study stack that covers summarisation, review, research, and practice.
     `.trim(),
@@ -60,10 +60,10 @@ The key to academic success in 2025 is not choosing one AI tool, but building a 
             'Learn the exact AI-powered study workflow top students use to cut revision time in half while achieving better exam results.',
         color: '#8b5cf6',
         content: `
-Studying faster with AI is not about cutting corners — it's about eliminating inefficiency. Here's the complete workflow used by high-achieving students who leverage artificial intelligence.
+Studying faster with AI is not about cutting corners; it's about eliminating inefficiency. Here's the complete workflow used by high-achieving students who leverage artificial intelligence.
 
 **Step 1: The AI Dump (10 minutes)**
-At the end of each lecture, paste your raw notes into StudyBoost AI and generate a structured summary. This forces the AI to identify the most important concepts and organises your thoughts immediately after learning — when retention is highest.
+At the end of each lecture, paste your raw notes into StudyBoost AI and generate a structured summary. This forces the AI to identify the most important concepts and organises your thoughts immediately after learning (when retention is highest).
 
 **Step 2: Active Recall with AI Flashcards (15 minutes per session)**
 Use the flashcard generator to create Q&A pairs from your summarised notes. Then use spaced repetition: review new cards daily for 3 days, then every 3 days, then weekly.
@@ -91,7 +91,7 @@ When you encounter a question you can't answer, use an AI chatbot (Gemini, ChatG
 Exam season doesn't have to be stressful when you have AI in your corner. These evidence-based AI exam preparation strategies will help you walk into any exam with confidence.
 
 **Tip 1: Build Your AI Knowledge Base Early**
-Start using AI summarisation tools from week one. By exam time, you'll have a structured, AI-organised set of notes for every topic — a significant advantage over students who only start revising weeks before.
+Start using AI summarisation tools from week one. By exam time, you'll have a structured, AI-organised set of notes for every topic: a significant advantage over students who only start revising weeks before.
 
 **Tip 2: Use AI to Identify Examiner Priorities**
 Ask an AI chatbot: "What are the most likely exam topics for [module name]?" or "What questions typically appear in [subject] exams?" While not perfect, this can help you allocate revision time strategically.
@@ -105,7 +105,7 @@ The evening before an exam, use the note summariser to condense your already-sum
 **Tip 5: Post-Exam Analysis**
 After each exam or practice test, paste your answers into an AI tool and ask for feedback. Identify patterns in your mistakes to guide future revision sessions.
 
-Combining these strategies with consistent effort will make AI your most powerful exam partner — not a shortcut, but a force multiplier.
+Combining these strategies with consistent effort will make AI your most powerful exam partner. It is not a shortcut, but a force multiplier.
     `.trim(),
     },
 ];

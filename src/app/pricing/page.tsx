@@ -67,7 +67,7 @@ const faqs = [
     },
     {
         q: 'What AI model powers StudyBoost AI?',
-        a: 'StudyBoost AI is powered by Google Gemini — one of the most advanced AI models available, capable of understanding complex academic content.',
+        a: 'StudyBoost AI is powered by Google Gemini - one of the most advanced AI models available, capable of understanding complex academic content.',
     },
     {
         q: 'Can I cancel my Premium plan anytime?',
@@ -137,7 +137,7 @@ export default function PricingPage() {
                         <span className={styles.guaranteeIcon}><ShieldCheck size={32} color="#10b981" /></span>
                         <div>
                             <strong>30-Day Money-Back Guarantee</strong>
-                            <p>Not happy with Premium? Get a full refund within 30 days — no questions asked.</p>
+                            <p>Not happy with Premium? Get a full refund within 30 days - no questions asked.</p>
                         </div>
                     </div>
                 </div>

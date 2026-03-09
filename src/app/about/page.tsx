@@ -6,7 +6,7 @@ import styles from './AboutPage.module.css';
 export const metadata: Metadata = {
     title: 'About – StudyBoost AI',
     description:
-        'Learn about StudyBoost AI — our mission to help every student study smarter with AI, meet our team, and read real student testimonials.',
+        'Learn about StudyBoost AI: our mission to help every student study smarter with AI, meet our team, and read real student testimonials.',
     keywords: [
         'about AI study assistant',
         'AI learning platform',
@@ -44,7 +44,7 @@ const testimonials = [
         name: 'Emily T.',
         university: 'University of Manchester',
         subject: 'Medicine',
-        quote: 'StudyBoost AI completely changed how I revise. I used to spend 4 hours making notes — now a 10-minute AI session gives me better summaries than I could write myself.',
+        quote: 'StudyBoost AI completely changed how I revise. I used to spend 4 hours making notes; now a 10-minute AI session gives me better summaries than I could write myself.',
         stars: 5,
         avatar: 'ET',
     },
@@ -111,7 +111,7 @@ export default function AboutPage() {
                         <div>
                             <h2 className={styles.missionTitle}>Our Mission</h2>
                             <p className={styles.missionText}>
-                                To democratise AI-powered studying and give every university student — regardless of background, budget, or prior knowledge — the tools they need to achieve their academic potential.
+                                To democratise AI-powered studying and give every university student (regardless of background, budget, or prior knowledge) the tools they need to achieve their academic potential.
                             </p>
                         </div>
                     </div>
