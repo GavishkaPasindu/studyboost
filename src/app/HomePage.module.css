@@ -118,12 +118,12 @@
     line-height: 1.08;
     letter-spacing: -0.03em;
     margin-bottom: 24px;
-    color: #f1f5f9;
+    color: var(--text-1);
 }
 
 .heroSub {
     font-size: 1.1rem;
-    color: #94a3b8;
+    color: var(--text-2);
     max-width: 520px;
     margin-bottom: 36px;
     line-height: 1.8;
@@ -134,7 +134,7 @@
 }
 
 .heroSub strong {
-    color: #f1f5f9;
+    color: var(--text-1);
 }
 
 [data-theme='light'] .heroSub strong {
@@ -317,7 +317,7 @@
     padding: 10px 16px;
     font-size: 0.82rem;
     font-weight: 600;
-    color: #f1f5f9;
+    color: var(--text-1);
     white-space: nowrap;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
@@ -410,13 +410,13 @@
     font-family: 'Outfit', sans-serif;
     font-size: 1.15rem;
     font-weight: 800;
-    color: #f1f5f9;
+    color: var(--text-1);
     margin-bottom: 12px;
 }
 
 .featDesc {
     font-size: 0.9rem;
-    color: #94a3b8;
+    color: var(--text-2);
     line-height: 1.75;
     margin-bottom: 24px;
     flex: 1;
@@ -444,7 +444,7 @@
 
 .featStatLabel {
     font-size: 0.75rem;
-    color: #475569;
+    color: var(--text-3);
     margin-top: 4px;
 }
 
@@ -526,13 +526,13 @@
     font-family: 'Outfit', sans-serif;
     font-size: 1rem;
     font-weight: 700;
-    color: #f1f5f9;
+    color: var(--text-1);
     margin-bottom: 10px;
 }
 
 .stepDesc {
     font-size: 0.86rem;
-    color: #475569;
+    color: var(--text-3);
     line-height: 1.7;
 }
 
@@ -567,7 +567,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     font-size: 0.85rem;
     font-weight: 600;
-    color: #475569;
+    color: var(--text-3);
 }
 
 .demoTextarea {
@@ -622,7 +622,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     font-size: 0.85rem;
     font-weight: 600;
-    color: #475569;
+    color: var(--text-3);
 }
 
 .outputBadge {
@@ -715,13 +715,13 @@
     font-family: 'Outfit', sans-serif;
     font-size: 1rem;
     font-weight: 700;
-    color: #f1f5f9;
+    color: var(--text-1);
     margin-bottom: 8px;
 }
 
 .miniDesc {
     font-size: 0.87rem;
-    color: #475569;
+    color: var(--text-3);
     line-height: 1.7;
 }
 
@@ -828,12 +828,12 @@
     font-family: 'Outfit', sans-serif;
     font-size: 0.95rem;
     font-weight: 700;
-    color: #f1f5f9;
+    color: var(--text-1);
 }
 
 .tInfo {
     font-size: 0.8rem;
-    color: #475569;
+    color: var(--text-3);
 }
 
 .tUni {
@@ -879,13 +879,13 @@
     font-family: 'Outfit', sans-serif;
     font-size: 1.2rem;
     font-weight: 800;
-    color: #f1f5f9;
+    color: var(--text-1);
     margin-bottom: 8px;
 }
 
 .magnetSub {
     font-size: 0.9rem;
-    color: #475569;
+    color: var(--text-3);
     line-height: 1.7;
     max-width: 480px;
 }
@@ -916,13 +916,13 @@
     font-family: 'Outfit', sans-serif;
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 900;
-    color: #f1f5f9;
+    color: var(--text-1);
     margin: 16px 0;
 }
 
 .ctaSub {
     font-size: 1.1rem;
-    color: #94a3b8;
+    color: var(--text-2);
     max-width: 500px;
     margin: 0 auto 36px;
     line-height: 1.7;

@@ -54,17 +54,17 @@ const getAvatar = (initials: string, color1: string, color2: string) => (
 
 const TESTIMONIALS = [
   {
-    avatar: getAvatar('ET', '#818cf8', '#38bdf8'), name: 'Emily T.', year: 'Software Engineering Support', uni: 'SLIIT',
+    avatar: getAvatar('GC', '#818cf8', '#38bdf8'), name: 'Ganusha Chadika', year: 'Software Engineering Support', uni: 'IIT',
     quote: 'I used to spend my entire Sunday making flashcards. Now I paste my lecture slides in on Sunday morning and my cards are done in 2 minutes. I can\'t imagine going back.',
     stars: 5,
   },
   {
-    avatar: getAvatar('MK', '#34d399', '#059669'), name: 'Marcus K.', year: 'Computer Science Student', uni: 'IIT',
+    avatar: getAvatar('HA', '#34d399', '#059669'), name: 'Hasala Abilasha', year: 'Computer Science Student', uni: 'IIT',
     quote: 'The exam question generator is incredible. It predicted several key topics that actually came up in my algorithm final. My grades have improved significantly.',
     stars: 5,
   },
   {
-    avatar: getAvatar('ZA', '#fb923c', '#ea580c'), name: 'Zara A.', year: 'Management Information Systems', uni: 'NSBM',
+    avatar: getAvatar('C', '#fb923c', '#ea580c'), name: 'Chamindu', year: 'Management Information Systems', uni: 'IIT',
     quote: 'Complex business modules have thousands of details to memorise. StudyBoost AI summarises each slide into a structured format. My note quality has improved massively.',
     stars: 5,
   },

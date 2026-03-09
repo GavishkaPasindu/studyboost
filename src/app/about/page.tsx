@@ -41,28 +41,28 @@ const team = [
 
 const testimonials = [
     {
-        name: 'Emily T.',
-        university: 'SLIIT',
+        name: 'Ganusha Chadika',
+        university: 'IIT',
         subject: 'Software Engineering',
         quote: 'StudyBoost AI completely changed how I revise. I used to spend 4 hours making notes; now a 10-minute AI session gives me better summaries than I could write myself.',
         stars: 5,
-        avatar: 'ET',
+        avatar: 'GC',
     },
     {
-        name: 'Marcus K.',
+        name: 'Hasala Abilasha',
         university: 'IIT',
         subject: 'Computer Science',
         quote: 'The flashcard generator is genius. I paste in my lecture slides and get 20 practice cards in seconds. My recall in exams has improved dramatically.',
         stars: 5,
-        avatar: 'MK',
+        avatar: 'HA',
     },
     {
-        name: 'Zara A.',
-        university: 'NSBM',
+        name: 'Chamindu',
+        university: 'IIT',
         subject: 'Business Analytics',
         quote: 'As a student, I have thousands of pages to cover. StudyBoost AI helps me identify the key principles quickly. I genuinely don\'t know how I studied without it.',
         stars: 5,
-        avatar: 'ZA',
+        avatar: 'C',
     },
 ];
 

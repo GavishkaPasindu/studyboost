@@ -13,13 +13,13 @@
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
     letter-spacing: -0.02em;
-    color: #f1f5f9;
+    color: var(--text-1);
     margin-bottom: 16px;
 }
 
 .subtitle {
     font-size: 1.05rem;
-    color: #94a3b8;
+    color: var(--text-2);
     max-width: 540px;
     margin: 0 auto;
     line-height: 1.75;
@@ -44,7 +44,7 @@
     font-family: 'Outfit', sans-serif;
     font-size: 0.95rem;
     font-weight: 600;
-    color: #475569;
+    color: var(--text-3);
     cursor: pointer;
     transition: all 0.2s;
 }
@@ -99,13 +99,13 @@
     font-family: 'Outfit', sans-serif;
     font-size: 0.95rem;
     font-weight: 700;
-    color: #f1f5f9;
+    color: var(--text-1);
     margin-bottom: 4px;
 }
 
 .toolDescText {
     font-size: 0.85rem;
-    color: #475569;
+    color: var(--text-3);
 }
 
 .keySection {
@@ -117,7 +117,7 @@
 .keyLabel {
     font-size: 0.82rem;
     font-weight: 600;
-    color: #475569;
+    color: var(--text-3);
 }
 
 .keyLabel a {
@@ -158,7 +158,7 @@
 .outputLabel {
     font-size: 0.88rem;
     font-weight: 600;
-    color: #475569;
+    color: var(--text-3);
 }
 
 .emptyState {
@@ -251,7 +251,7 @@
 .cardQuestion {
     font-size: 0.88rem;
     font-weight: 600;
-    color: #f1f5f9;
+    color: var(--text-1);
     line-height: 1.4;
     flex: 1;
     display: flex;
@@ -275,7 +275,7 @@
 
 .cardAnswer {
     font-size: 0.85rem;
-    color: #94a3b8;
+    color: var(--text-2);
     line-height: 1.5;
 }
 
