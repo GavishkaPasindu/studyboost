@@ -42,8 +42,8 @@ const features = [
     },
     {
         icon: <Bot size={24} />,
-        title: 'Powered by Google Gemini',
-        desc: "Built on Google's most advanced AI model, ensuring accurate, relevant, and high-quality study content every time.",
+        title: 'Advanced AI Technology',
+        desc: "Built on the most advanced AI models, ensuring accurate, relevant, and high-quality study content every time.",
         color: '#f59e0b',
         stat: '99.9%',
         statLabel: 'Uptime reliability',
@@ -59,7 +59,7 @@ const features = [
     {
         icon: <ShieldCheck size={24} />,
         title: 'Private & Secure',
-        desc: 'Your notes are never stored on our servers. All AI processing happens securely via the Gemini API directly in your browser.',
+        desc: 'Your notes are never stored on our servers. All AI processing happens securely via our advanced AI integration directly in your browser.',
         color: '#ef4444',
         stat: '0',
         statLabel: 'Data stored on our end',

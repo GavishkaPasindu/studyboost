@@ -78,7 +78,7 @@ export default function AIToolsPage() {
         if (!output) return;
 
         try {
-            // The output is already plain text containing the markdown/gemini response, so we can save it directly
+            // The output is already plain text containing the markdown/AI response, so we can save it directly
             const blob = new Blob([output], { type: 'text/plain;charset=utf-8' });
             const url = URL.createObjectURL(blob);
 

@@ -68,7 +68,7 @@ const faqs = [
     },
     {
         q: 'What AI model powers StudyBoost AI?',
-        a: 'StudyBoost AI is powered by Google Gemini - one of the most advanced AI models available, capable of understanding complex academic content.',
+        a: 'StudyBoost AI is powered by one of the most advanced AI models available, capable of understanding complex academic content.',
     },
     {
         q: 'Can I cancel my Premium plan anytime?',
@@ -76,7 +76,7 @@ const faqs = [
     },
     {
         q: 'Is my data safe?',
-        a: 'Yes. Your lecture notes are sent directly to the Gemini API and are never stored on our servers. We take your privacy seriously.',
+        a: 'Yes. Your lecture notes are processed securely and are never stored on our servers. We take your privacy seriously.',
     },
 ];
 

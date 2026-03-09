@@ -1,4 +1,4 @@
-// Using gemini-flash-lite-latest as it is less prone to "High Demand" 503 errors on the free tier
+// Using the latest AI model as it is less prone to "High Demand" 503 errors on the free tier
 const GEMINI_API_URL =
   'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent';
 
@@ -28,14 +28,14 @@ export async function callGemini(prompt: string, apiKey?: string): Promise<strin
     if (res.status === 429 || msg.toLowerCase().includes('quota')) {
       throw new Error(
         '⏳ Free-tier rate limit reached. Please wait 60 seconds and try again. ' +
-        '(Gemini free tier allows 15 requests/minute.)'
+        '(Free tier allows 15 requests/minute.)'
       );
     }
 
     // Friendly 503 high demand message
     if (res.status === 503 || msg.toLowerCase().includes('high demand') || msg.toLowerCase().includes('overloaded')) {
       throw new Error(
-        'The free Google Gemini model is currently experiencing extremely high global demand and is temporarily full. Please try again in a few minutes!'
+        'The free AI model is currently experiencing extremely high global demand and is temporarily full. Please try again in a few minutes!'
       );
     }
 

@@ -42,7 +42,7 @@ const FEATURES = [
 const STEPS = [
   { num: '01', icon: <ClipboardList size={32} strokeWidth={1.5} />, title: 'Paste Your Notes', desc: 'Copy any lecture notes, textbook passages, or study material directly into the AI input.' },
   { num: '02', icon: <Settings2 size={32} strokeWidth={1.5} />, title: 'Choose Your Tool', desc: 'Select from Summariser, Flashcard Generator, or Exam Questions based on what you need to study.' },
-  { num: '03', icon: <Sparkles size={32} strokeWidth={1.5} />, title: 'Generate Instantly', desc: 'Our Gemini-powered AI analyses your content and generates study material in under 10 seconds.' },
+  { num: '03', icon: <Sparkles size={32} strokeWidth={1.5} />, title: 'Generate Instantly', desc: 'Our advanced AI analyses your content and generates study material in under 10 seconds.' },
   { num: '04', icon: <Trophy size={32} strokeWidth={1.5} />, title: 'Study & Ace It', desc: 'Use your personalised AI study content to revise with confidence and walk into your exam prepared.' },
 ];
 
@@ -71,7 +71,7 @@ const TESTIMONIALS = [
 ];
 
 const MINI_FEATURES = [
-  { icon: <ShieldCheck size={28} />, title: 'Zero Data Storage', desc: 'Your notes are never saved on our servers. Everything is processed via the Gemini API in real-time.' },
+  { icon: <ShieldCheck size={28} />, title: 'Zero Data Storage', desc: 'Your notes are never saved on our servers. Everything is processed via secure AI in real-time.' },
   { icon: <Smartphone size={28} />, title: 'Any Device', desc: 'Fully responsive design. Use StudyBoost on your laptop, tablet, or phone - anywhere, any time.' },
   { icon: <Globe size={28} />, title: 'All Subjects', desc: 'Medicine, Law, Engineering, Economics, History - the AI adapts to any academic subject instantly.' },
   { icon: <RefreshCw size={28} />, title: 'Spaced Repetition', desc: 'Flashcard structure based on the proven Leitner spaced repetition system for long-term memory.' },
@@ -119,7 +119,7 @@ export default function HomePage() {
             <div className={styles.heroLeft}>
               <div className={styles.heroBadge} data-reveal>
                 <span className={styles.badgeDot} />
-                Powered by Google Gemini AI
+                Powered by Advanced Study AI
               </div>
               <h1 className={styles.heroTitle} data-reveal data-delay="100">
                 Study <span className="gradient-text-anim">10× Smarter</span><br />
@@ -289,7 +289,7 @@ export default function HomePage() {
               <div className={styles.outputCard}>
                 <div className={styles.outputHeader}>
                   <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}><CheckCircle2 size={16} color="#34d399" /> AI Summary Output</span>
-                  <span className={styles.outputBadge}>Gemini AI</span>
+                  <span className={styles.outputBadge}>AI Analysis</span>
                 </div>
                 {summary ? (
                   <div className={`output-box ${styles.outputContent}`}>{summary}</div>
@@ -418,7 +418,7 @@ export default function HomePage() {
               <Link href="/ai-tools" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Rocket size={18} /> Start Free Now</Link>
               <Link href="/pricing" className="btn-ghost">View Pricing →</Link>
             </div>
-            <p className={styles.ctaNote}>Free tier • No signup required • Powered by Google Gemini</p>
+            <p className={styles.ctaNote}>Free tier • No signup required • Powered by Advanced AI</p>
           </div>
         </div>
       </section>

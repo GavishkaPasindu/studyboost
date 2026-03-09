@@ -27,7 +27,7 @@ const team = [
         name: 'James O\'Connor',
         role: 'Co-Founder & CTO',
         avatar: 'JO',
-        bio: 'Ex-Google engineer with a passion for building tools that matter. James architected the Gemini API integration powering all StudyBoost AI tools.',
+        bio: 'Ex-Google engineer with a passion for building tools that matter. James architected the AI integration powering all StudyBoost AI tools.',
         color: '#8b5cf6',
     },
     {

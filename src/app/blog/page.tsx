@@ -34,8 +34,8 @@ The landscape of academic study has been completely transformed by artificial in
 **1. StudyBoost AI: Note Summarisation & Flashcards**
 StudyBoost AI leads the pack as the most comprehensive AI study assistant for university students. With its three-in-one toolkit (note summariser, flashcard generator, and exam question creator) it covers every stage of the study cycle.
 
-**2. Google Gemini: Advanced Question Answering**
-Google Gemini's multimodal capabilities make it excellent for explaining complex concepts, solving equations, and even interpreting diagrams from textbooks.
+**2. Advanced AI: Advanced Question Answering**
+Advanced AI multimodal capabilities make it excellent for explaining complex concepts, solving equations, and even interpreting diagrams from textbooks.
 
 **3. Anki with AI Plugins: Optimised Spaced Repetition**
 Traditional Anki supercharged with AI plugins can automatically generate cards from your notes and optimise the review schedule based on your performance.
@@ -72,7 +72,7 @@ Use the flashcard generator to create Q&A pairs from your summarised notes. Then
 A week before exams, use the exam question generator on each topic. Attempt to answer each question before revealing the model answer. This closely simulates exam conditions and identifies knowledge gaps.
 
 **Step 4: Gap Filling with AI Explanations**
-When you encounter a question you can't answer, use an AI chatbot (Gemini, ChatGPT) to explain the concept in plain language. Ask for analogies and real-world examples to solidify understanding.
+When you encounter a question you can't answer, use an AI chatbot to explain the concept in plain language. Ask for analogies and real-world examples to solidify understanding.
 
 **The Result**: Students who follow this workflow consistently report studying 40–60% faster while achieving higher grades. The magic is in the compounding: better organisation leads to better recall, which means less time re-reading the same material.
     `.trim(),
