@@ -61,15 +61,13 @@ export default function Footer() {
 
             <div className={styles.bottom}>
                 <div className={styles.bottomInner}>
-                    <p>© 2025 StudyBoost AI. All rights reserved.</p>
+                    <p>© 2026 StudyBoost AI. All rights reserved.</p>
                     <p className={styles.external}>
                         Powered by{' '}
                         <a
-                            href="https://deepmind.google/gemini"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="/"
                         >
-                            Google Gemini
+                            StudyBoost AI
                         </a>{' '}
                         &middot;{' '}
                         <a
