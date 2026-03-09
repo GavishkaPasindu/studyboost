@@ -556,7 +556,7 @@
 
 .demoCard {
     background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border: 1px solid var(--border);
     border-radius: 20px;
     overflow: hidden;
 }
@@ -564,7 +564,7 @@
 .demoCardHeader {
     padding: 14px 20px;
     background: rgba(255, 255, 255, 0.03);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid var(--border);
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--text-3);
@@ -573,7 +573,7 @@
 .demoTextarea {
     border-radius: 0 !important;
     border: none !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
+    border-bottom: 1px solid var(--border) !important;
     min-height: 200px;
 }
 
@@ -607,7 +607,7 @@
 
 .outputCard {
     background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border: 1px solid var(--border);
     border-radius: 20px;
     overflow: hidden;
     min-height: 320px;
@@ -619,7 +619,7 @@
     align-items: center;
     padding: 14px 20px;
     background: rgba(255, 255, 255, 0.03);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid var(--border);
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--text-3);
