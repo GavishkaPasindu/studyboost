@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Mail, CheckCircle2, Gift, Download, Clock, Globe, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, CheckCircle2, Gift, ClipboardList, Clock, Globe, Facebook, Instagram, Linkedin, Youtube, ExternalLink } from 'lucide-react';
 import styles from './ContactPage.module.css';
 
 export default function ContactPage() {
@@ -115,79 +115,51 @@ export default function ContactPage() {
                             )}
                         </div>
 
-                        {/* Right side */}
+                        {/* Right side - Google Form Integration */}
                         <div className={styles.infoSection}>
-                            {/* Lead Magnet */}
-                            <div className={`glass-card ${styles.magnetCard}`}>
-                                <div className={styles.magnetHeader}>
-                                    <span className={styles.magnetEmoji}><Gift size={32} color="#818cf8" strokeWidth={1.5} /></span>
+                            <div className={`glass-card ${styles.magnetCard}`} style={{ padding: '32px' }}>
+                                <div className={styles.magnetHeader} style={{ marginBottom: '24px' }}>
+                                    <span className={styles.magnetEmoji}><ClipboardList size={40} color="#818cf8" strokeWidth={1.5} /></span>
                                     <div>
-                                        <h3 className={styles.magnetTitle}>Free AI Study Guide</h3>
-                                        <p className={styles.magnetSub}>Get our 20-page guide to mastering any subject with AI — absolutely free.</p>
+                                        <h3 className={styles.magnetTitle} style={{ fontSize: '1.4rem' }}>Quick Support Form</h3>
+                                        <p className={styles.magnetSub}>Need a faster response? Fill out our dedicated support form for priority assistance.</p>
                                     </div>
                                 </div>
-                                {signedUp ? (
-                                    <div className={styles.signupSuccess}>
-                                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><CheckCircle2 size={16} color="#34d399" /> Check your inbox! The guide is on its way.</span>
-                                    </div>
-                                ) : (
-                                    <div className={styles.magnetForm}>
-                                        <input
-                                            type="email"
-                                            className="input-field"
-                                            placeholder="your@email.com"
-                                            value={emailSignup}
-                                            onChange={(e) => setEmailSignup(e.target.value)}
-                                            aria-label="Email for free study guide"
-                                            id="lead-magnet-email"
-                                        />
-                                        <button
-                                            className="btn-primary btn-sm"
-                                            onClick={() => { if (emailSignup) setSignedUp(true); }}
-                                            id="lead-magnet-btn"
-                                        >
-                                            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Download size={18} /> Get Free Guide</span>
-                                        </button>
-                                    </div>
-                                )}
-                            </div>
-
-                            {/* Contact info */}
-                            <div className={`glass-card ${styles.infoCard}`}>
-                                <h3 className={styles.infoTitle}>Contact Information</h3>
-                                <div className={styles.infoItems}>
-                                    <div className={styles.infoItem}>
-                                        <span className={styles.infoIcon}><Mail size={24} /></span>
-                                        <div>
-                                            <div className={styles.infoLabel}>Email</div>
-                                            <a href="mailto:gavishka.20220340@iit.ac.lk">gavishka.20220340@iit.ac.lk</a>
-                                        </div>
-                                    </div>
-                                    <div className={styles.infoItem}>
-                                        <span className={styles.infoIcon}><Clock size={24} /></span>
-                                        <div>
-                                            <div className={styles.infoLabel}>Response Time</div>
-                                            <span>Within 24 hours</span>
-                                        </div>
-                                    </div>
-                                    <div className={styles.infoItem}>
-                                        <span className={styles.infoIcon}><Globe size={24} /></span>
-                                        <div>
-                                            <div className={styles.infoLabel}>Headquartered</div>
-                                            <span>London, United Kingdom</span>
-                                        </div>
-                                    </div>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                        <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
+                                            <CheckCircle2 size={16} color="#34d399" /> Priority response within 12 hours
+                                        </li>
+                                        <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
+                                            <CheckCircle2 size={16} color="#34d399" /> Direct technical support access
+                                        </li>
+                                        <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
+                                            <CheckCircle2 size={16} color="#34d399" /> Feature requests & bug reports
+                                        </li>
+                                    </ul>
+                                    <a
+                                        href="https://forms.gle/iRyNiwRdFracCCg89"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn-primary"
+                                        style={{ width: '100%', justifyContent: 'center', padding: '16px' }}
+                                    >
+                                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
+                                            Open Google Form <ExternalLink size={18} />
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
 
                             {/* Social */}
                             <div className={`glass-card ${styles.socialCard}`}>
-                                <h3 className={styles.infoTitle}>Follow Us</h3>
+                                <h3 className={styles.infoTitle}>Follow Our Community</h3>
                                 <div className={styles.socials}>
                                     {[
-                                        { icon: <Twitter size={20} />, label: 'Twitter / X', handle: '@StudyBoostAI' },
+                                        { icon: <Facebook size={20} />, label: 'Facebook', handle: 'StudyBoost AI' },
                                         { icon: <Instagram size={20} />, label: 'Instagram', handle: '@studyboostai' },
                                         { icon: <Linkedin size={20} />, label: 'LinkedIn', handle: 'StudyBoost AI' },
+                                        { icon: <Youtube size={20} />, label: 'YouTube', handle: 'StudyBoost AI' },
                                     ].map((s) => (
                                         <a key={s.label} href="#" className={styles.socialItem}>
                                             <span className={styles.socialIcon}>{s.icon}</span>

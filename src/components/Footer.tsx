@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Zap, Twitter, Instagram, Linkedin, MessageCircle, Mail } from 'lucide-react';
+import { Zap, Facebook, Instagram, Linkedin, Youtube, Mail } from 'lucide-react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -16,10 +16,10 @@ export default function Footer() {
                         Empowering university students to study smarter worldwide.
                     </p>
                     <div className={styles.socials}>
-                        <a href="#" aria-label="Twitter" className={styles.social}><Twitter size={20} /></a>
+                        <a href="#" aria-label="Facebook" className={styles.social}><Facebook size={20} /></a>
                         <a href="#" aria-label="Instagram" className={styles.social}><Instagram size={20} /></a>
                         <a href="#" aria-label="LinkedIn" className={styles.social}><Linkedin size={20} /></a>
-                        <a href="#" aria-label="Discord" className={styles.social}><MessageCircle size={20} /></a>
+                        <a href="#" aria-label="YouTube" className={styles.social}><Youtube size={20} /></a>
                     </div>
                 </div>
 
