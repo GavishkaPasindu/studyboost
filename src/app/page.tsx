@@ -391,7 +391,7 @@ export default function HomePage() {
             <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><BookOpen size={14} /> How Our AI Tools Work</div>
             <h2 className="section-title">Three Powerful Tools. <span className="gradient-text">One Smart Workflow.</span></h2>
             <p className="section-subtitle mx-auto">
-              StudyBoost AI gives every student access to a professional-grade <strong>AI note summariser</strong>, an intelligent <strong>flashcard generator</strong>, and a predictive <strong>exam question generator</strong> — all in one place.
+              StudyBoost AI gives every student access to a professional-grade <strong>AI note summariser</strong>, an intelligent <strong>flashcard generator</strong>, and a predictive <strong>exam question generator</strong>. All in one place.
             </p>
           </div>
 
@@ -401,7 +401,7 @@ export default function HomePage() {
               <div style={{ fontSize: '2rem', marginBottom: '16px' }}>📝</div>
               <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-1)', marginBottom: '12px' }}>AI Note Summariser</h3>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-2)', lineHeight: '1.7', marginBottom: '16px' }}>
-                Our <strong>AI note summariser</strong> compresses hours of lecture content into structured, bullet-pointed summaries in seconds. Paste any set of lecture notes and the summariser extracts key definitions, formulas, and concepts — removing all filler text.
+                Our <strong>AI note summariser</strong> compresses hours of lecture content into structured, bullet-pointed summaries in seconds. Paste any set of lecture notes and the summariser extracts key definitions, formulas, and concepts while removing all filler text.
               </p>
               <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 <li style={{ display: 'flex', gap: '10px', fontSize: '0.85rem', color: 'var(--text-2)' }}><CheckCircle2 size={16} color="#34d399" style={{ flexShrink: 0, marginTop: '2px' }} /> Works on any lecture notes or textbook chapter</li>
@@ -448,7 +448,7 @@ export default function HomePage() {
             {[
               {
                 q: 'How does the AI note summariser work?',
-                a: 'Our AI note summariser uses large language model technology to analyse the semantic structure of your lecture notes. It identifies key themes, important definitions, and critical formulas, then produces a clean, hierarchical summary — typically condensing notes by 80–90%.',
+                a: 'Our AI note summariser uses large language model technology to analyse the semantic structure of your lecture notes. It identifies key themes, important definitions, and critical formulas, then produces a clean, hierarchical summary. It typically condenses notes by 80 to 90%.',
               },
               {
                 q: 'Can the flashcard generator handle technical subjects?',
