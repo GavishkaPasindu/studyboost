@@ -23,7 +23,16 @@ export default function ContactPage() {
 
     return (
         <div className={styles.page}>
-            <div className={styles.header}>
+            <div className={styles.header} style={{ position: 'relative' }}>
+                <a
+                    href="https://forms.gle/iRyNiwRdFracCCg89"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                    style={{ position: 'absolute', top: '24px', right: '32px', display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 20px', fontSize: '0.9rem' }}
+                >
+                    <ExternalLink size={16} /> Subscribe via Form
+                </a>
                 <div className="container">
                     <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Mail size={14} /> Get In Touch</div>
                     <h1 className={styles.title}>
@@ -108,7 +117,7 @@ export default function ContactPage() {
                                             required
                                         />
                                     </div>
-                                    <button type="submit" className="btn-primary" id="contact-submit">
+                                    <button type="submit" className="btn-primary" id="contact-submit" style={{ width: '100%', justifyContent: 'center', padding: '16px', fontSize: '1rem' }}>
                                         <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Mail size={18} /> Send Message</span>
                                     </button>
                                 </form>
@@ -126,6 +135,17 @@ export default function ContactPage() {
                                     </div>
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                                    <a
+                                        href="https://forms.gle/iRyNiwRdFracCCg89"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn-primary"
+                                        style={{ width: '100%', justifyContent: 'center', padding: '16px', fontSize: '1rem' }}
+                                    >
+                                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
+                                            Subscribe via Form <ExternalLink size={18} />
+                                        </span>
+                                    </a>
                                     <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
                                         <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
                                             <CheckCircle2 size={16} color="#34d399" /> Weekly AI study tips & tricks
@@ -137,17 +157,6 @@ export default function ContactPage() {
                                             <CheckCircle2 size={16} color="#34d399" /> Early access to new AI tools
                                         </li>
                                     </ul>
-                                    <a
-                                        href="https://forms.gle/iRyNiwRdFracCCg89"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="btn-primary"
-                                        style={{ width: '100%', justifyContent: 'center', padding: '16px' }}
-                                    >
-                                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
-                                            Subscribe via Form <ExternalLink size={18} />
-                                        </span>
-                                    </a>
                                 </div>
                             </div>
 
