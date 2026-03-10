@@ -4,14 +4,14 @@ import { Zap, CheckCircle2, ShieldCheck, HelpCircle, Coins } from 'lucide-react'
 import styles from './PricingPage.module.css';
 
 export const metadata: Metadata = {
-    title: 'Elite Access Pricing – StudyBoost AI',
+    title: 'Elite Access Plans – StudyBoost AI',
     description:
-        'Select your academic growth plan. Access advanced AI synthesis, predictive mock exams, and premium cognitive tools for university success.',
+        'Select your academic growth plan. Access advanced AI synthesis, predictive mock exams, and cognitive flashcard generation for university success.',
     keywords: [
-        'Elite Student Subscription',
-        'Academic AI Investment',
-        'Premium Learning Access',
-        'Student Productivity Plans',
+        'AI Summarize Tool Access',
+        'Academic Flashcard Generator Plans',
+        'Practice Exam Questions Premium',
+        'Student Learning Modalities',
     ],
 };
 
@@ -22,7 +22,7 @@ const plans = [
         price: '$0',
         per: 'forever',
         badge: null,
-        desc: 'Perfect for trying out AI-powered studying with no commitment.',
+        desc: 'Explore the power of AI-driven tools with immediate free access.',
         features: [
             '✅ 3 AI requests per day',
             '✅ Note summarisation tool',
@@ -76,7 +76,7 @@ const faqs = [
     },
     {
         q: 'Is my data safe?',
-        a: 'Yes. Your lecture notes are processed securely and are never stored on our servers. We take your privacy seriously.',
+        a: 'Yes. Your lecture materials are processed securely and are never stored on our servers. We prioritize your academic privacy.',
     },
 ];
 
@@ -87,7 +87,7 @@ export default function PricingPage() {
                 <div className="container">
                     <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Coins size={14} /> Simple Pricing</div>
                     <h1 className={styles.title}>
-                        Invest in Your <span className="gradient-text">Academic Future</span>
+                        Unlock Your <span className="gradient-text">Academic Potential</span>
                     </h1>
                     <p className={styles.subtitle}>
                         Scalable access for every student. Begin your path to mastery for free, or unlock unlimited power with Premium.

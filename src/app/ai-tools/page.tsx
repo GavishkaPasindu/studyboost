@@ -219,6 +219,33 @@ export default function AIToolsPage() {
                             </div>
                         )}
                     </div>
+                    {/* Best Practices / SEO Content */}
+                    <section className={styles.tipsSection} style={{ marginTop: '80px', paddingTop: '60px', borderTop: '1px solid var(--border)' }}>
+                        <div className="text-center" style={{ marginBottom: '40px' }}>
+                            <div className="section-label">Master Your Workflow</div>
+                            <h2 className="section-title">How to Use StudyBoost <span className="gradient-text">Like an Expert</span></h2>
+                        </div>
+                        <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
+                            <div className={`glass-card ${styles.tipCard}`} style={{ padding: '24px' }}>
+                                <h3 style={{ fontSize: '1.1rem', marginBottom: '12px', color: 'var(--text-1)' }}>1. Start with the Note Summariser</h3>
+                                <p style={{ fontSize: '0.9rem', color: 'var(--text-2)', lineHeight: '1.6' }}>
+                                    Always run your raw lecture notes through our <strong>note summariser</strong> first. This identifies the core concepts and removes filler, making it easier for the AI to generate high-quality <strong>revision flashcards</strong> later.
+                                </p>
+                            </div>
+                            <div className={`glass-card ${styles.tipCard}`} style={{ padding: '24px' }}>
+                                <h3 style={{ fontSize: '1.1rem', marginBottom: '12px', color: 'var(--text-1)' }}>2. Generate Thematic Flashcards</h3>
+                                <p style={{ fontSize: '0.9rem', color: 'var(--text-2)', lineHeight: '1.6' }}>
+                                    Use our <strong>AI flashcard generator</strong> on specific sections of your notes. We recommend generating 10-15 cards per topic to ensure your <strong>revision decks</strong> are focused and effective for long-term memory.
+                                </p>
+                            </div>
+                            <div className={`glass-card ${styles.tipCard}`} style={{ padding: '24px' }}>
+                                <h3 style={{ fontSize: '1.1rem', marginBottom: '12px', color: 'var(--text-1)' }}>3. Validate with Practice Exams</h3>
+                                <p style={{ fontSize: '0.9rem', color: 'var(--text-2)', lineHeight: '1.6' }}>
+                                    Before your final review, use our <strong>mock exam question generator</strong>. It creates predictive assessments that simulate real exam pressure, testing your ability to retrieve information from your <strong>AI-summarised notes</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>

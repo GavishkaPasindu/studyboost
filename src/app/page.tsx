@@ -71,12 +71,12 @@ const TESTIMONIALS = [
 ];
 
 const MINI_FEATURES = [
-  { icon: <ShieldCheck size={28} />, title: 'Zero Data Storage', desc: 'Your notes are never saved on our servers. Everything is processed via secure AI in real-time.' },
-  { icon: <Smartphone size={28} />, title: 'Any Device', desc: 'Fully responsive design. Use StudyBoost on your laptop, tablet, or phone - anywhere, any time.' },
-  { icon: <Globe size={28} />, title: 'All Subjects', desc: 'Medicine, Law, Engineering, Economics, History - the AI adapts to any academic subject instantly.' },
-  { icon: <RefreshCw size={28} />, title: 'Spaced Repetition', desc: 'Flashcard structure based on the proven Leitner spaced repetition system for long-term memory.' },
-  { icon: <Zap size={28} />, title: 'Instant Results', desc: 'No waiting. No queuing. AI-generated study content delivered in under 10 seconds every time.' },
-  { icon: <BadgeDollarSign size={28} />, title: 'Free to Start', desc: 'Full access to all three AI tools completely free. No credit card. No commitment.' },
+  { icon: <ShieldCheck size={28} />, title: 'Zero Data Storage', desc: 'Your notes are never saved on our servers. Your flashcards and summaries are processed in real-time.' },
+  { icon: <Smartphone size={28} />, title: 'Any Device', desc: 'Fully responsive: Use our AI flashcard generator and note summariser on your laptop, tablet, or phone.' },
+  { icon: <Globe size={28} />, title: 'All Subjects', desc: 'Medicine, Law, Engineering - our AI adapts to any academic subject for summaries and practice exams.' },
+  { icon: <RefreshCw size={28} />, title: 'Spaced Repetition', desc: 'Our AI flashcard generator mimics the Leitner system to optimize your long-term memory retention.' },
+  { icon: <Zap size={28} />, title: 'Instant Results', desc: 'No waiting. Get AI-generated study content, summaries, and revision cards in under 10 seconds.' },
+  { icon: <BadgeDollarSign size={28} />, title: 'Free Access', desc: 'Full access to all AI tools completely free. No hidden barriers. No financial commitment.' },
 ];
 
 export default function HomePage() {
@@ -135,8 +135,8 @@ export default function HomePage() {
               </div>
               <div className={styles.heroTrust} data-reveal data-delay="400">
                 <div className={styles.trustItem}><span className={styles.trustCheck}><Check size={16} strokeWidth={3} /></span> Free tier available</div>
-                <div className={styles.trustItem}><span className={styles.trustCheck}><Check size={16} strokeWidth={3} /></span> No credit card</div>
-                <div className={styles.trustItem}><span className={styles.trustCheck}><Check size={16} strokeWidth={3} /></span> Your data stays private</div>
+                <div className={styles.trustItem}><span className={styles.trustCheck}><Check size={16} strokeWidth={3} /></span> Instant tool access</div>
+                <div className={styles.trustItem}><span className={styles.trustCheck}><Check size={16} strokeWidth={3} /></span> Secure & Private</div>
               </div>
             </div>
 
@@ -412,13 +412,13 @@ export default function HomePage() {
               Your Next Exam. <span className="gradient-text">Your Best Result.</span>
             </h2>
             <p className={styles.ctaSub}>
-              Join thousands of students already using AI to study smarter. Free tier always available. No credit card. No excuses.
+              Join thousands of students already using our AI flashcard generator and note summarization tools to study smarter. Complete academic mastery is one click away.
             </p>
             <div className={styles.ctaBtns}>
-              <Link href="/ai-tools" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Rocket size={18} /> Start Free Now</Link>
-              <Link href="/pricing" className="btn-ghost">View Pricing →</Link>
+              <Link href="/ai-tools" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Rocket size={18} /> Access AI Tools Free</Link>
+              <Link href="/pricing" className="btn-ghost">Access Plans →</Link>
             </div>
-            <p className={styles.ctaNote}>Free tier • No signup required • Powered by Advanced AI</p>
+            <p className={styles.ctaNote}>Free tier • Instant access • Professional Academic AI</p>
           </div>
         </div>
       </section>

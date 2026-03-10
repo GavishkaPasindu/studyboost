@@ -135,6 +135,65 @@ export default function FeaturesPage() {
                 </div>
             </section>
 
+            {/* Deep Dive Sections */}
+            <section className="section">
+                <div className="container">
+                    <div className="grid-2" style={{ gap: '64px', alignItems: 'center', marginBottom: '100px' }}>
+                        <div data-reveal="left">
+                            <div className="section-label">Flashcard Generator</div>
+                            <h2 className="section-title">Automated <span className="gradient-text">Revision Decks</span></h2>
+                            <p className="section-subtitle" style={{ marginLeft: 0 }}>
+                                Our AI flashcard generator doesn't just copy-paste; it analyzes your lecture notes to identify key definitions, formulas, and historical dates. It then creates balanced Q&A pairs specifically optimized for active recall.
+                            </p>
+                            <ul className={styles.detailList} style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '16px', marginTop: '24px' }}>
+                                <li style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><CheckCircle2 size={20} color="#34d399" /> Automatic AI extraction of key concepts</li>
+                                <li style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><CheckCircle2 size={20} color="#34d399" /> Perfect for medical, law, and engineering notes</li>
+                                <li style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><CheckCircle2 size={20} color="#34d399" /> Spaced repetition ready flashcards</li>
+                            </ul>
+                        </div>
+                        <div className={`glass-card ${styles.visualBox}`} data-reveal="right" style={{ padding: '40px', background: 'var(--card-bg)', border: '1px solid var(--border)' }}>
+                            <div style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '20px' }}>AI Revision Card Example</div>
+                            <div style={{ background: 'rgba(129, 140, 248, 0.1)', padding: '20px', borderRadius: '12px', borderLeft: '4px solid #818cf8', marginBottom: '16px' }}>
+                                <div style={{ fontSize: '0.8rem', opacity: 0.6, marginBottom: '8px' }}>FRONT (Question)</div>
+                                <div>What are the primary stages of the Calvin Cycle in photosynthesis?</div>
+                            </div>
+                            <div style={{ background: 'rgba(52, 211, 153, 0.1)', padding: '20px', borderRadius: '12px', borderLeft: '4px solid #34d399' }}>
+                                <div style={{ fontSize: '0.8rem', opacity: 0.6, marginBottom: '8px' }}>BACK (Answer)</div>
+                                <div>1. Carbon fixation, 2. Reduction phase, 3. Regeneration of Ribulose.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
+                        <div className={`glass-card ${styles.visualBox}`} data-reveal="left" style={{ padding: '40px', order: 2 }}>
+                            <div style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '20px' }}>AI Summarization Output</div>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                <div style={{ width: '100%', height: '12px', background: 'var(--border)', borderRadius: '6px' }} />
+                                <div style={{ width: '85%', height: '12px', background: 'var(--border)', borderRadius: '6px' }} />
+                                <div style={{ width: '90%', height: '12px', background: 'var(--border)', borderRadius: '6px' }} />
+                                <div style={{ width: '40%', height: '12px', background: 'var(--border)', borderRadius: '6px', marginBottom: '16px' }} />
+                                <div style={{ display: 'flex', gap: '10px' }}>
+                                    <div style={{ padding: '6px 12px', background: 'rgba(129, 140, 248, 0.2)', borderRadius: '20px', fontSize: '0.7rem' }}>Key Concept</div>
+                                    <div style={{ padding: '6px 12px', background: 'rgba(129, 140, 248, 0.2)', borderRadius: '20px', fontSize: '0.7rem' }}>Definition</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-reveal="right" style={{ order: 1 }}>
+                            <div className="section-label">Note Summarizer</div>
+                            <h2 className="section-title">Automated <span className="gradient-text">Academic Synthesis</span></h2>
+                            <p className="section-subtitle" style={{ marginLeft: 0 }}>
+                                Our note summarizer turns chaotic lecture notes into structured knowledge maps. It identifies the hierarchical structure of your materials, providing executive summaries that capture 100% of the core value in 10% of the space.
+                            </p>
+                            <ul className={styles.detailList} style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '16px', marginTop: '24px' }}>
+                                <li style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><CheckCircle2 size={20} color="#34d399" /> Intelligent hierarchical summarization</li>
+                                <li style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><CheckCircle2 size={20} color="#34d399" /> Context-aware academic analysis</li>
+                                <li style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><CheckCircle2 size={20} color="#34d399" /> Multi-format export for all study notes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Comparison table */}
             <section className={`section-sm ${styles.compareSection}`}>
                 <div className="container">

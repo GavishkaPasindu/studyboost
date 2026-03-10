@@ -28,7 +28,7 @@ export default function Footer() {
                     <h4>Product</h4>
                     <Link href="/ai-tools">AI Tools</Link>
                     <Link href="/features">Features</Link>
-                    <Link href="/pricing">Pricing</Link>
+                    <Link href="/pricing">Access Plans</Link>
                     <Link href="/blog">Blog</Link>
                 </div>
 

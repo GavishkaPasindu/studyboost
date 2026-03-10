@@ -11,7 +11,7 @@ const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/ai-tools', label: 'AI Tools' },
     { href: '/features', label: 'Features' },
-    { href: '/pricing', label: 'Pricing' },
+    { href: '/pricing', label: 'Access Plans' },
     { href: '/blog', label: 'Blog' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
