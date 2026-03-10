@@ -119,62 +119,61 @@ export default function ContactPage() {
                         <div className={styles.infoSection}>
                             <div className={`glass-card ${styles.magnetCard}`} style={{ padding: '32px' }}>
                                 <div className={styles.magnetHeader} style={{ marginBottom: '24px' }}>
-                                    <span className={styles.magnetEmoji}><ClipboardList size={40} color="#818cf8" strokeWidth={1.5} /></span>
+                                    <span className={styles.magnetEmoji}><Gift size={40} color="#818cf8" strokeWidth={1.5} /></span>
                                     <div>
-                                        <h3 className={styles.magnetTitle} style={{ fontSize: '1.4rem' }}>Quick Support Form</h3>
-                                        <p className={styles.magnetSub}>Need a faster response? Fill out our dedicated support form for priority assistance.</p>
+                                        <h3 className={styles.magnetTitle} style={{ fontSize: '1.4rem' }}>Subscribe & Support</h3>
+                                        <p className={styles.magnetSub}>Join our community to get the latest AI study tips and priority help via our form.</p>
                                     </div>
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                                     <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                                        <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
-                                            <CheckCircle2 size={16} color="#34d399" /> Priority response within 12 hours
-                                        </li>
-                                        <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
-                                            <CheckCircle2 size={16} color="#34d399" /> Direct technical support access
-                                        </li>
-                                        <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
-                                            <CheckCircle2 size={16} color="#34d399" /> Feature requests & bug reports
-                                        </li>
-                                    </ul>
-                                    <a
-                                        href="https://forms.gle/iRyNiwRdFracCCg89"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="btn-primary"
-                                        style={{ width: '100%', justifyContent: 'center', padding: '16px' }}
-                                    >
-                                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
-                                            Open Google Form <ExternalLink size={18} />
-                                        </span>
-                                    </a>
-                                </div>
+                                        <CheckCircle2 size={16} color="#34d399" /> Weekly AI study tips & tricks
+                                    </li>
+                                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
+                                        <CheckCircle2 size={16} color="#34d399" /> Priority community support
+                                    </li>
+                                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
+                                        <CheckCircle2 size={16} color="#34d399" /> Early access to new AI tools
+                                    </li>
+                                </ul>
+                                <a
+                                    href="https://forms.gle/iRyNiwRdFracCCg89"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn-primary"
+                                    style={{ width: '100%', justifyContent: 'center', padding: '16px' }}
+                                >
+                                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
+                                        Subscribe via Form <ExternalLink size={18} />
+                                    </span>
+                                </a>
                             </div>
+                        </div>
 
-                            {/* Social */}
-                            <div className={`glass-card ${styles.socialCard}`}>
-                                <h3 className={styles.infoTitle}>Follow Our Community</h3>
-                                <div className={styles.socials}>
-                                    {[
-                                        { icon: <Facebook size={20} />, label: 'Facebook', handle: 'StudyBoost AI' },
-                                        { icon: <Instagram size={20} />, label: 'Instagram', handle: '@studyboostai' },
-                                        { icon: <Linkedin size={20} />, label: 'LinkedIn', handle: 'StudyBoost AI' },
-                                        { icon: <Youtube size={20} />, label: 'YouTube', handle: 'StudyBoost AI' },
-                                    ].map((s) => (
-                                        <a key={s.label} href="#" className={styles.socialItem}>
-                                            <span className={styles.socialIcon}>{s.icon}</span>
-                                            <div>
-                                                <div className={styles.socialLabel}>{s.label}</div>
-                                                <div className={styles.socialHandle}>{s.handle}</div>
-                                            </div>
-                                        </a>
-                                    ))}
-                                </div>
+                        {/* Social */}
+                        <div className={`glass-card ${styles.socialCard}`}>
+                            <h3 className={styles.infoTitle}>Follow Our Community</h3>
+                            <div className={styles.socials}>
+                                {[
+                                    { icon: <Facebook size={20} />, label: 'Facebook', handle: 'StudyBoost AI' },
+                                    { icon: <Instagram size={20} />, label: 'Instagram', handle: '@studyboostai' },
+                                    { icon: <Linkedin size={20} />, label: 'LinkedIn', handle: 'StudyBoost AI' },
+                                    { icon: <Youtube size={20} />, label: 'YouTube', handle: 'StudyBoost AI' },
+                                ].map((s) => (
+                                    <a key={s.label} href="#" className={styles.socialItem}>
+                                        <span className={styles.socialIcon}>{s.icon}</span>
+                                        <div>
+                                            <div className={styles.socialLabel}>{s.label}</div>
+                                            <div className={styles.socialHandle}>{s.handle}</div>
+                                        </div>
+                                    </a>
+                                ))}
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
         </div>
+            </section >
+        </div >
     );
 }
