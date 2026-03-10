@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     keywords: [
         'Academic AI Strategy',
         'Cognitive Study Methods',
-        'AI Learning Trends 2025',
+        'AI Learning Trends 2026',
         'Student Success Resources',
         'Intelligent Revision Guides',
     ],
@@ -21,14 +21,14 @@ const articles = [
         slug: 'best-ai-tools-for-students',
         emoji: <Bot size={24} />,
         category: 'AI Tools',
-        date: 'March 5, 2025',
+        date: 'March 5, 2026',
         readTime: '8 min read',
-        title: 'Best AI Tools for Students in 2025',
+        title: 'Best AI Tools for Students in 2026',
         excerpt:
             'Discover the top AI tools every university student should be using right now to study smarter, save time, and improve their grades.',
         color: '#6366f1',
         content: `
-The landscape of academic study has been completely transformed by artificial intelligence. In 2025, students who leverage AI tools have a significant advantage over those who rely on traditional methods alone.
+The landscape of academic study has been completely transformed by artificial intelligence. In 2026, students who leverage AI tools have a significant advantage over those who rely on traditional methods alone.
 
 **1. StudyBoost AI: Note Summarisation & Flashcards**
 StudyBoost AI leads the pack as the most comprehensive AI study assistant for university students. With its three-in-one toolkit (note summariser, flashcard generator, and exam question creator) it covers every stage of the study cycle.
@@ -45,14 +45,14 @@ While not specialised for studying, ChatGPT remains powerful for essay planning,
 **5. Elicit: Academic Research Assistant**
 Elicit helps students find academic papers, extract key claims, and summarise research. This is invaluable for literature reviews.
 
-The key to academic success in 2025 is not choosing one AI tool, but building a personalised AI study stack that covers summarisation, review, research, and practice.
+The key to academic success in 2026 is not choosing one AI tool, but building a personalised AI study stack that covers summarisation, review, research, and practice.
     `.trim(),
     },
     {
         slug: 'how-to-study-faster-with-ai',
         emoji: <Zap size={24} />,
         category: 'Study Strategy',
-        date: 'February 20, 2025',
+        date: 'February 20, 2026',
         readTime: '6 min read',
         title: 'How to Study Faster with AI: A Complete Guide',
         excerpt:
@@ -80,7 +80,7 @@ When you encounter a question you can't answer, use an AI chatbot to explain the
         slug: 'ai-exam-preparation-tips',
         emoji: <Trophy size={24} />,
         category: 'Exam Prep',
-        date: 'January 15, 2025',
+        date: 'January 15, 2026',
         readTime: '7 min read',
         title: 'AI Exam Preparation Tips: Score Higher This Semester',
         excerpt:

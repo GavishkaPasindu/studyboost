@@ -119,7 +119,7 @@ export default function HomePage() {
             <div className={styles.heroLeft}>
               <div className={styles.heroBadge} data-reveal>
                 <span className={styles.badgeDot} />
-                Powered by Advanced Study AI
+                StudyBoost AI — AI-Powered Study Tools
               </div>
               <h1 className={styles.heroTitle} data-reveal data-delay="100">
                 Master <span className="gradient-text-anim">Academic Efficiency</span><br />
