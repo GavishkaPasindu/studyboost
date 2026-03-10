@@ -122,12 +122,12 @@ export default function HomePage() {
                 Powered by Advanced Study AI
               </div>
               <h1 className={styles.heroTitle} data-reveal data-delay="100">
-                Study <span className="gradient-text-anim">10× Smarter</span><br />
+                Master <span className="gradient-text-anim">Academic Efficiency</span><br />
                 with AI That Actually<br />
-                <span className="gradient-text">Understands Your Notes</span>
+                <span className="gradient-text">Synthesizes Your Knowledge</span>
               </h1>
               <p className={styles.heroSub} data-reveal data-delay="200">
-                Transform any lecture notes into AI summaries, smart flashcards, and exam-ready practice questions in seconds. Trusted by <strong>university students</strong> worldwide.
+                Transform complex lecture materials into structured AI summaries, cognitive flashcards, and predictive practice assessments. Trusted by students at top universities worldwide.
               </p>
               <div className={styles.heroCtas} data-reveal data-delay="300">
                 <Link href="/ai-tools" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Rocket size={18} /> Try It Free - No Signup</Link>
@@ -198,8 +198,8 @@ export default function HomePage() {
         <div className="container">
           <div className="text-center" data-reveal>
             <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Sparkles size={14} /> AI Tools</div>
-            <h2 className="section-title">Three Powerful AI Tools.<br /><span className="gradient-text">One Smarter Student.</span></h2>
-            <p className="section-subtitle mx-auto">Every tool is designed around how students actually study, not how textbooks think you should study.</p>
+            <h2 className="section-title">Three Powerful AI Modalities.<br /><span className="gradient-text">One Elite Learning Path.</span></h2>
+            <p className="section-subtitle mx-auto">Every tool is engineered for cognitive retention and academic precision, far beyond basic note-taking.</p>
           </div>
           <div className={styles.featGrid}>
             {FEATURES.map((f, i) => (
@@ -235,8 +235,8 @@ export default function HomePage() {
         <div className="container">
           <div className="text-center" data-reveal>
             <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Settings2 size={14} /> Process</div>
-            <h2 className="section-title">From Lecture Notes to <span className="gradient-text">Exam Confidence</span> in 4 Steps</h2>
-            <p className="section-subtitle mx-auto">No setup. No learning curve. Built to work immediately the moment you paste your first note.</p>
+            <h2 className="section-title">From Raw Materials to <span className="gradient-text">Academic Mastery</span> in 4 Steps</h2>
+            <p className="section-subtitle mx-auto">A seamless workflow designed for immediate application and rapid knowledge internalisation.</p>
           </div>
           <div className={styles.steps}>
             {STEPS.map((s, i) => (

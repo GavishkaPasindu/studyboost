@@ -4,16 +4,15 @@ import { Bot, Zap, Trophy, Library, Mail } from 'lucide-react';
 import styles from './BlogPage.module.css';
 
 export const metadata: Metadata = {
-    title: 'Blog – StudyBoost AI',
+    title: 'Academic Insights – StudyBoost AI',
     description:
-        'Explore AI study tips, the latest tools for students, and exam preparation strategies. Your go-to resource for smarter studying.',
+        'Deep dives into cognitive science, latest AI learning trends, and student success strategies. Master your university journey with expert guidance.',
     keywords: [
-        'AI study tips',
-        'AI learning resources',
-        'AI study guide',
-        'study strategies AI',
-        'best AI tools for students',
-        'AI exam preparation',
+        'Academic AI Strategy',
+        'Cognitive Study Methods',
+        'AI Learning Trends 2025',
+        'Student Success Resources',
+        'Intelligent Revision Guides',
     ],
 };
 

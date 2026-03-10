@@ -13,7 +13,7 @@ export default function Footer() {
                         <span>StudyBoost <strong>AI</strong></span>
                     </Link>
                     <p className={styles.tagline}>
-                        Empowering university students to study smarter worldwide.
+                        Optimizing academic performance through advanced AI synthesis worldwide.
                     </p>
                     <div className={styles.socials}>
                         <a href="#" aria-label="Facebook" className={styles.social}><Facebook size={20} /></a>
@@ -44,7 +44,7 @@ export default function Footer() {
                 {/* Newsletter */}
                 <div className={styles.newsletter}>
                     <h4 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <Mail size={20} /> Weekly Study Boost
+                        <Mail size={20} /> Elite Academic Insights
                     </h4>
                     <p>Get AI study tips, resources, and exclusive offers in your inbox.</p>
                     <div className={styles.form}>

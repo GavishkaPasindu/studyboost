@@ -3,15 +3,15 @@ import { Clock, Trophy, BrainCircuit, Bot, Smartphone, ShieldCheck, Sparkles, Re
 import styles from './FeaturesPage.module.css';
 
 export const metadata: Metadata = {
-    title: 'Features – StudyBoost AI',
+    title: 'Advanced Features – StudyBoost AI',
     description:
-        'Discover how StudyBoost AI saves study time, boosts exam preparation, and increases learning productivity with powerful AI-driven tools for students.',
+        'Explore the cognitive science and AI technology behind StudyBoost AI. Optimize your academic performance with structured revision maps and predictive assessments.',
     keywords: [
-        'AI study features',
-        'productivity tools for students',
-        'exam prep AI',
-        'study assistant features',
-        'AI learning platform',
+        'Cognitive Academic Integration',
+        'Revision Workflow Automation',
+        'Academic Data Security',
+        'Intelligent Learning Synthesis',
+        'University Productivity Tech',
     ],
 };
 
@@ -81,11 +81,11 @@ export default function FeaturesPage() {
                 <div className="container">
                     <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Sparkles size={14} /> Features</div>
                     <h1 className={styles.title}>
-                        Everything You Need to Study <span className="gradient-text">Like a Pro</span>
+                        Elite Tools for <span className="gradient-text">Academic Excellence</span>
                     </h1>
                     <p className={styles.subtitle}>
-                        StudyBoost AI is packed with features designed to make studying
-                        more efficient, effective, and actually enjoyable.
+                        StudyBoost AI integrates cutting-edge cognitive models to make your
+                        revision faster, deeper, and more scientifically effective.
                     </p>
                 </div>
             </div>

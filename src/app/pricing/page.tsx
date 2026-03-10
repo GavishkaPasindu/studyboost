@@ -4,14 +4,14 @@ import { Zap, CheckCircle2, ShieldCheck, HelpCircle, Coins } from 'lucide-react'
 import styles from './PricingPage.module.css';
 
 export const metadata: Metadata = {
-    title: 'Pricing – StudyBoost AI',
+    title: 'Elite Access Pricing – StudyBoost AI',
     description:
-        'Choose the best StudyBoost AI plan. Free AI summaries or Premium unlimited access with flashcards, exam prep, and priority support.',
+        'Select your academic growth plan. Access advanced AI synthesis, predictive mock exams, and premium cognitive tools for university success.',
     keywords: [
-        'AI study pricing',
-        'free AI study tools',
-        'premium AI study assistant',
-        'student AI subscription',
+        'Elite Student Subscription',
+        'Academic AI Investment',
+        'Premium Learning Access',
+        'Student Productivity Plans',
     ],
 };
 
@@ -87,10 +87,10 @@ export default function PricingPage() {
                 <div className="container">
                     <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Coins size={14} /> Simple Pricing</div>
                     <h1 className={styles.title}>
-                        Study Smarter for <span className="gradient-text">Every Budget</span>
+                        Invest in Your <span className="gradient-text">Academic Future</span>
                     </h1>
                     <p className={styles.subtitle}>
-                        Start free, upgrade when you need more. No hidden fees, no surprises.
+                        Scalable access for every student. Begin your path to mastery for free, or unlock unlimited power with Premium.
                     </p>
                 </div>
             </div>

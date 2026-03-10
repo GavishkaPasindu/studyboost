@@ -4,14 +4,14 @@ import { Sparkles, Target, Lightbulb, Users, Star, GraduationCap, Unlock, Shield
 import styles from './AboutPage.module.css';
 
 export const metadata: Metadata = {
-    title: 'About – StudyBoost AI',
+    title: 'Our Vision – StudyBoost AI',
     description:
-        'Learn about StudyBoost AI: our mission to help every student study smarter with AI, meet our team, and read student reviews.',
+        'Meet the innovators behind StudyBoost AI. We bridge the gap between advanced cognitive science and daily academic challenges for students worldwide.',
     keywords: [
-        'about AI study assistant',
-        'AI learning platform',
-        'student study support',
-        'StudyBoost AI mission',
+        'Educational AI Innovation',
+        'Cognitive Tool Development',
+        'Academic Excellence Mission',
+        'Student-Led Tech Founders',
     ],
 };
 

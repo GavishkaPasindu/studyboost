@@ -21,10 +21,10 @@ export default function AIToolsPage() {
         {
             id: 'summarize' as Tool,
             icon: <FileText size={24} />,
-            label: 'Note Summariser',
-            desc: 'Condense hours of lecture notes into clear, structured summaries.',
-            placeholder: 'Paste your lecture notes here...\n\nExample: "The French Revolution began in 1789 when economic hardship, social inequality, and political corruption reached a breaking point..."',
-            buttonLabel: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Sparkles size={18} /> Summarise Notes</span>,
+            label: 'Lecture Summariser',
+            desc: 'Synthesise dense academic materials into clear, structured knowledge maps.',
+            placeholder: 'Paste your lecture notes or textbook excerpts here...\n\nExample: "The macroeconomic implications of fiscal policy in developing nations..."',
+            buttonLabel: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Sparkles size={18} /> Synthesise Materials</span>,
         },
         {
             id: 'flashcards' as Tool,
@@ -37,10 +37,10 @@ export default function AIToolsPage() {
         {
             id: 'exam' as Tool,
             icon: <BookMarked size={24} />,
-            label: 'Exam Question Generator',
-            desc: 'Create exam-style practice questions to test your understanding.',
-            placeholder: 'Paste your lecture notes here...\n\nThe AI will generate a mix of short answer, multiple choice, and analytical questions.',
-            buttonLabel: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><BookMarked size={18} /> Generate Exam Questions</span>,
+            label: 'Cognitive Practice Exams',
+            desc: 'Generate predictive practice assessments to validate your depth of understanding.',
+            placeholder: 'Paste your study materials here...\n\nThe AI will generate a mix of analytical questions, critical thinking prompts, and mock exam scenarios.',
+            buttonLabel: <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><BookMarked size={18} /> Generate Practice Assessment</span>,
         },
     ];
 
@@ -126,11 +126,11 @@ export default function AIToolsPage() {
                 <div className="container">
                     <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Bot size={14} /> AI-Powered Tools</div>
                     <h1 className={styles.title}>
-                        Your AI Study <span className="gradient-text">Toolkit</span>
+                        Your AI Academic <span className="gradient-text">Toolkit</span>
                     </h1>
                     <p className={styles.subtitle}>
-                        Three powerful tools to transform how you study. Paste your notes and
-                        let AI do the heavy lifting.
+                        Professional-grade tools for cognitive synthesis and knowledge testing.
+                        Upload your materials and let advanced AI optimize your revision flow.
                     </p>
                 </div>
             </div>

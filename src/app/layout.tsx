@@ -6,19 +6,19 @@ import { ThemeProvider } from '@/context/ThemeContext';
 
 export const metadata: Metadata = {
   title: {
-    default: 'StudyBoost AI – AI-Powered Study Assistant for Students',
+    default: 'StudyBoost AI – Advanced AI-Powered Academic Synthesis for Students',
     template: '%s | StudyBoost AI',
   },
   description:
-    'StudyBoost AI helps university students study smarter with AI-powered lecture note summaries, flashcard generation, and exam question prep. Try free today.',
+    'StudyBoost AI provides university students with advanced academic synthesis, automated revision decks, and topic-specific practice exams. Optimize your learning efficiency today.',
   keywords: [
-    'AI study assistant',
-    'AI for students',
-    'study AI',
-    'summarize notes',
-    'flashcards AI',
-    'exam prep AI',
-    'AI learning tools',
+    'AI Academic Synthesis',
+    'Automated Revision Decks',
+    'Topic-Specific Practice Exams',
+    'Predictive Mock Test Generator',
+    'University Learning Optimization',
+    'Contextual Note Analysis',
+    'Smart Academic Assistant',
   ],
   authors: [{ name: 'StudyBoost AI' }],
   openGraph: {
