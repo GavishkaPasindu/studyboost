@@ -384,23 +384,95 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── LEAD MAGNET ─────────────────────────────────────────── */}
+      {/* ── PRODUCT EXPLAINER / SEO CONTENT ─────────────────────── */}
       <section className="section-sm">
         <div className="container">
-          <div className={`glass-card ${styles.magnetBox}`} data-reveal>
-            <div className={styles.magnetGlow} />
-            <div className={styles.magnetLeft}>
-              <div className={styles.magnetEmoji}><Library size={48} color="#818cf8" strokeWidth={1.5} /></div>
-              <div>
-                <div className="section-label" style={{ marginBottom: '12px' }}>Free Download</div>
-                <h3 className={styles.magnetTitle}>Get the Ultimate AI Study Guide: Free</h3>
-                <p className={styles.magnetSub}>Our 28-page PDF covers the best AI study techniques, exam prep strategies, and exactly how to use StudyBoost AI to maximise your grades. Downloaded by thousands of students.</p>
-              </div>
+          <div className="text-center" style={{ marginBottom: '60px' }} data-reveal>
+            <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><BookOpen size={14} /> How Our AI Tools Work</div>
+            <h2 className="section-title">Three Powerful Tools. <span className="gradient-text">One Smart Workflow.</span></h2>
+            <p className="section-subtitle mx-auto">
+              StudyBoost AI gives every student access to a professional-grade <strong>AI note summariser</strong>, an intelligent <strong>flashcard generator</strong>, and a predictive <strong>exam question generator</strong> — all in one place.
+            </p>
+          </div>
+
+          <div className="grid-3" style={{ gap: '32px', marginBottom: '64px' }}>
+            {/* Card 1: Note Summariser */}
+            <div className={`glass-card`} style={{ padding: '32px' }} data-reveal>
+              <div style={{ fontSize: '2rem', marginBottom: '16px' }}>📝</div>
+              <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-1)', marginBottom: '12px' }}>AI Note Summariser</h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-2)', lineHeight: '1.7', marginBottom: '16px' }}>
+                Our <strong>AI note summariser</strong> compresses hours of lecture content into structured, bullet-pointed summaries in seconds. Paste any set of lecture notes and the summariser extracts key definitions, formulas, and concepts — removing all filler text.
+              </p>
+              <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <li style={{ display: 'flex', gap: '10px', fontSize: '0.85rem', color: 'var(--text-2)' }}><CheckCircle2 size={16} color="#34d399" style={{ flexShrink: 0, marginTop: '2px' }} /> Works on any lecture notes or textbook chapter</li>
+                <li style={{ display: 'flex', gap: '10px', fontSize: '0.85rem', color: 'var(--text-2)' }}><CheckCircle2 size={16} color="#34d399" style={{ flexShrink: 0, marginTop: '2px' }} /> Structured summaries with headings &amp; bullets</li>
+                <li style={{ display: 'flex', gap: '10px', fontSize: '0.85rem', color: 'var(--text-2)' }}><CheckCircle2 size={16} color="#34d399" style={{ flexShrink: 0, marginTop: '2px' }} /> Reduces 50-page notes to a 5-minute read</li>
+              </ul>
             </div>
-            <Link href="/contact" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Download size={18} /> Download Free Guide</Link>
+
+            {/* Card 2: Flashcard Generator */}
+            <div className={`glass-card`} style={{ padding: '32px' }} data-reveal data-delay="100">
+              <div style={{ fontSize: '2rem', marginBottom: '16px' }}>🃏</div>
+              <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-1)', marginBottom: '12px' }}>AI Flashcard Generator</h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-2)', lineHeight: '1.7', marginBottom: '16px' }}>
+                Our <strong>AI flashcard generator</strong> automatically converts your study notes into question-and-answer revision cards. Each AI study flashcard targets a single key concept, making them perfect for spaced repetition and active recall revision sessions.
+              </p>
+              <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <li style={{ display: 'flex', gap: '10px', fontSize: '0.85rem', color: 'var(--text-2)' }}><CheckCircle2 size={16} color="#34d399" style={{ flexShrink: 0, marginTop: '2px' }} /> Auto-generates Q&amp;A study flashcards from notes</li>
+                <li style={{ display: 'flex', gap: '10px', fontSize: '0.85rem', color: 'var(--text-2)' }}><CheckCircle2 size={16} color="#34d399" style={{ flexShrink: 0, marginTop: '2px' }} /> Ideal for medical, law, and engineering subjects</li>
+                <li style={{ display: 'flex', gap: '10px', fontSize: '0.85rem', color: 'var(--text-2)' }}><CheckCircle2 size={16} color="#34d399" style={{ flexShrink: 0, marginTop: '2px' }} /> Spaced-repetition-ready revision decks</li>
+              </ul>
+            </div>
+
+            {/* Card 3: Exam Question Generator */}
+            <div className={`glass-card`} style={{ padding: '32px' }} data-reveal data-delay="200">
+              <div style={{ fontSize: '2rem', marginBottom: '16px' }}>📋</div>
+              <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-1)', marginBottom: '12px' }}>Exam Question Generator</h3>
+              <p style={{ fontSize: '0.9rem', color: 'var(--text-2)', lineHeight: '1.7', marginBottom: '16px' }}>
+                Our <strong>exam question generator</strong> creates realistic practice exam questions directly from your uploaded study notes. Unlike generic question banks, each AI-generated exam question is tailored to your exact lecture content, helping you study smarter.
+              </p>
+              <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <li style={{ display: 'flex', gap: '10px', fontSize: '0.85rem', color: 'var(--text-2)' }}><CheckCircle2 size={16} color="#34d399" style={{ flexShrink: 0, marginTop: '2px' }} /> Multiple choice, short answer &amp; analytical questions</li>
+                <li style={{ display: 'flex', gap: '10px', fontSize: '0.85rem', color: 'var(--text-2)' }}><CheckCircle2 size={16} color="#34d399" style={{ flexShrink: 0, marginTop: '2px' }} /> Tailored to your specific study material</li>
+                <li style={{ display: 'flex', gap: '10px', fontSize: '0.85rem', color: 'var(--text-2)' }}><CheckCircle2 size={16} color="#34d399" style={{ flexShrink: 0, marginTop: '2px' }} /> Identifies knowledge gaps before the real exam</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* FAQ Block */}
+          <div className="text-center" style={{ marginBottom: '40px' }} data-reveal>
+            <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><MessageSquare size={14} /> Quick Answers</div>
+            <h2 className="section-title">Frequently Asked <span className="gradient-text">Questions</span></h2>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '760px', margin: '0 auto' }} data-reveal>
+            {[
+              {
+                q: 'How does the AI note summariser work?',
+                a: 'Our AI note summariser uses large language model technology to analyse the semantic structure of your lecture notes. It identifies key themes, important definitions, and critical formulas, then produces a clean, hierarchical summary — typically condensing notes by 80–90%.',
+              },
+              {
+                q: 'Can the flashcard generator handle technical subjects?',
+                a: 'Yes. Our AI flashcard generator is designed to handle complex academic content including medicine, law, engineering, computer science, and economics. The AI extracts technical terminology and creates accurate Q&A study flashcards even for highly specialised lecture notes.',
+              },
+              {
+                q: 'How is the exam question generator better than a generic question bank?',
+                a: 'Generic question banks offer pre-written questions unrelated to your specific lecture content. Our exam question generator analyses your own study notes and creates targeted practice exam questions based directly on what you have studied, so every question is relevant to your upcoming test.',
+              },
+              {
+                q: 'Are my summarised notes stored on your servers?',
+                a: 'No. Our note summariser processes your lecture notes in real-time and never stores them on our servers. Once your AI summary, revision flashcards, or practice exam questions are generated, your input is cleared. Your academic data remains completely private.',
+              },
+            ].map((item) => (
+              <div key={item.q} className="glass-card" style={{ padding: '24px 28px' }}>
+                <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1rem', fontWeight: 700, color: 'var(--text-1)', marginBottom: '10px' }}>{item.q}</h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--text-2)', lineHeight: '1.75' }}>{item.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+
 
       {/* ── FINAL CTA ───────────────────────────────────────────── */}
       <section className={styles.ctaSection}>
@@ -423,6 +495,6 @@ export default function HomePage() {
         </div>
       </section>
 
-    </main>
+    </main >
   );
 }
