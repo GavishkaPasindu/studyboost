@@ -127,11 +127,11 @@ export default function HomePage() {
                 <span className="gradient-text">Synthesizes Your Knowledge</span>
               </h1>
               <p className={styles.heroSub} data-reveal data-delay="200">
-                Transform complex lecture materials into structured AI summaries, cognitive flashcards, and predictive practice assessments. Trusted by students at top universities worldwide.
+                StudyBoost AI transforms complex lecture materials into structured AI summaries, cognitive flashcards, and predictive practice assessments. Trusted by students at top universities worldwide.
               </p>
               <div className={styles.heroCtas} data-reveal data-delay="300">
-                <Link href="/ai-tools" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Rocket size={18} /> Try It Free - No Signup</Link>
-                <Link href="/features" className="btn-ghost">See All Features →</Link>
+                <Link href="/ai-tools" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Rocket size={18} /> Use StudyBoost AI Free</Link>
+                <Link href="/features" className="btn-ghost">See All Features</Link>
               </div>
               <div className={styles.heroTrust} data-reveal data-delay="400">
                 <div className={styles.trustItem}><span className={styles.trustCheck}><Check size={16} strokeWidth={3} /></span> Free tier available</div>
@@ -221,7 +221,7 @@ export default function HomePage() {
                   ))}
                 </div>
                 <Link href="/ai-tools" className={styles.featLink} style={{ color: f.color }}>
-                  Try this tool →
+                  Use this AI tool
                 </Link>
               </div>
             ))}
@@ -309,7 +309,7 @@ export default function HomePage() {
                 )}
               </div>
               <Link href="/ai-tools" className={styles.demoMoreLink}>
-                → Try Flashcard Generator & Exam Questions on the AI Tools page
+                Use the StudyBoost AI Flashcard Generator and Exam Question Generator
               </Link>
             </div>
           </div>

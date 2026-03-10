@@ -63,7 +63,7 @@ export default function Navbar() {
 
                 {/* CTA */}
                 <Link href="/ai-tools" className={`btn-primary btn-sm ${styles.cta}`}>
-                    Try Free
+                    Start Free
                 </Link>
 
                 {/* Hamburger */}
@@ -99,7 +99,7 @@ export default function Navbar() {
                     </button>
                 </div>
                 <Link href="/ai-tools" className="btn-primary" onClick={() => setOpen(false)}>
-                    Try Free
+                    Start Free
                 </Link>
             </div>
         </nav>
