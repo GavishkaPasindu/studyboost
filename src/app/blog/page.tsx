@@ -171,26 +171,29 @@ export default function BlogPage() {
                 </div>
             </section>
 
-            {/* Subscribe CTA */}
+            {/* Google Form CTA */}
             <section className={`section-sm ${styles.subscribeSection}`}>
                 <div className="container">
-                    <div className={`highlight-box ${styles.subscribeBox}`}>
-                        <div className="text-center">
-                            <h2 className={styles.subscribeTitle} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}><Mail size={24} /> Get Weekly Study Boosts</h2>
-                            <p className={styles.subscribeSub}>
-                                Join 12,000+ students. Every week: AI study tips, new features, and exclusive resources.
-                            </p>
-                            <div className={styles.subscribeForm}>
-                                <input
-                                    type="email"
-                                    placeholder="your@university.edu"
-                                    className="input-field"
-                                    aria-label="Email for blog newsletter"
-                                />
-                                <button className="btn-primary">Subscribe Free →</button>
-                            </div>
-                            <p className={styles.spamNote}>No spam. Unsubscribe anytime.</p>
-                        </div>
+                    <div className={`${styles.subscribeBox}`} style={{ textAlign: 'center', padding: '48px 32px', background: 'var(--card)', border: '1px solid var(--border)', borderRadius: '20px', backdropFilter: 'blur(12px)' }}>
+                        <div style={{ fontSize: '3rem', marginBottom: '16px' }}>📬</div>
+                        <h2 className={styles.subscribeTitle} style={{ marginBottom: '12px' }}>
+                            Have a Question or Suggestion?
+                        </h2>
+                        <p className={styles.subscribeSub} style={{ marginBottom: '32px', maxWidth: '460px', margin: '0 auto 32px' }}>
+                            We&apos;d love to hear from you. Fill in our quick support form and our team will get back to you as soon as possible.
+                        </p>
+                        <a
+                            href="https://forms.gle/iRyNiwRdFracCCg89"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn-primary"
+                            style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', fontSize: '1rem', padding: '16px 36px' }}
+                        >
+                            <Mail size={20} /> Open Support Form
+                        </a>
+                        <p style={{ marginTop: '16px', fontSize: '0.82rem', color: 'var(--text-3)' }}>
+                            Quick response • Priority support • No spam
+                        </p>
                     </div>
                 </div>
             </section>
