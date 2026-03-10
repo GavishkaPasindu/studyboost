@@ -5,9 +5,11 @@ import styles from './FeaturesPage.module.css';
 export const metadata: Metadata = {
     title: 'Advanced Features – StudyBoost AI',
     description:
-        'Explore the cognitive science and AI technology behind StudyBoost AI. Optimize your academic performance with structured revision maps and predictive assessments.',
+        'Explore the cognitive science and AI technology behind StudyBoost AI. Optimize your academic performance with our Flashcard Generator, Exam Question Generator, and AI Note Summariser.',
     keywords: [
-        'Cognitive Academic Integration',
+        'Flashcard Generator',
+        'Exam Question Generator',
+        'AI Note Summariser',
         'Revision Workflow Automation',
         'Academic Data Security',
         'Intelligent Learning Synthesis',
@@ -68,7 +70,7 @@ const features = [
 
 const steps = [
     { num: '01', title: 'Paste Your Notes', desc: 'Copy and paste any lecture notes, textbook excerpts, or study material.' },
-    { num: '02', title: 'Choose Your Tool', desc: 'Select summarise, flashcards, or exam questions based on what you need.' },
+    { num: '02', title: 'Choose Your Tool', desc: 'Select from the AI Note Summariser, Flashcard Generator, or Exam Question Generator based on what you need.' },
     { num: '03', title: 'Get Instant Results', desc: 'AI generates your study material in seconds - ready to use immediately.' },
     { num: '04', title: 'Ace Your Exams', desc: 'Use your AI-generated study content to study efficiently and confidently.' },
 ];
@@ -84,8 +86,7 @@ export default function FeaturesPage() {
                         Elite Tools for <span className="gradient-text">Academic Excellence</span>
                     </h1>
                     <p className={styles.subtitle}>
-                        StudyBoost AI integrates cutting-edge cognitive models to make your
-                        revision faster, deeper, and more scientifically effective.
+                        StudyBoost AI integrates cutting-edge cognitive models to power our <strong>Flashcard Generator</strong>, <strong>Exam Question Generator</strong>, and AI Note Summariser — making your revision faster, deeper, and more effective.
                     </p>
                 </div>
             </div>
@@ -211,8 +212,8 @@ export default function FeaturesPage() {
                         </div>
                         {[
                             ['Note Summarisation', '2–3 hours', 'Under 30 seconds'],
-                            ['Flashcard Creation', '45 minutes', 'Instant, auto-generated'],
-                            ['Practice Questions', 'Find online / none', 'Tailored to YOUR notes'],
+                            ['Flashcard Generator', '45 minutes manual', 'Instant, auto-generated'],
+                            ['Exam Question Generator', 'Find online / none', 'Tailored to YOUR notes'],
                             ['Study Availability', 'Limited by resources', '24/7, any device'],
                             ['Cost', 'Textbooks, tutors', 'Free tier available'],
                         ].map(([label, old, neo]) => (

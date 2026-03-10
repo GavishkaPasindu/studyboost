@@ -127,7 +127,7 @@ export default function HomePage() {
                 <span className="gradient-text">Synthesizes Your Knowledge</span>
               </h1>
               <p className={styles.heroSub} data-reveal data-delay="200">
-                StudyBoost AI transforms complex lecture materials into structured AI summaries, cognitive flashcards, and predictive practice assessments. Trusted by students at top universities worldwide.
+                StudyBoost AI transforms complex lecture materials into structured AI summaries, an intelligent <strong>Flashcard Generator</strong>, and a predictive <strong>Exam Question Generator</strong>. Trusted by students at top universities worldwide.
               </p>
               <div className={styles.heroCtas} data-reveal data-delay="300">
                 <Link href="/ai-tools" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Rocket size={18} /> Use StudyBoost AI Free</Link>
@@ -135,8 +135,8 @@ export default function HomePage() {
               </div>
               <div className={styles.heroTrust} data-reveal data-delay="400">
                 <div className={styles.trustItem}><span className={styles.trustCheck}><Check size={16} strokeWidth={3} /></span> Free tier available</div>
-                <div className={styles.trustItem}><span className={styles.trustCheck}><Check size={16} strokeWidth={3} /></span> Instant tool access</div>
-                <div className={styles.trustItem}><span className={styles.trustCheck}><Check size={16} strokeWidth={3} /></span> Secure & Private</div>
+                <div className={styles.trustItem}><span className={styles.trustCheck}><Check size={16} strokeWidth={3} /></span> Flashcard Generator</div>
+                <div className={styles.trustItem}><span className={styles.trustCheck}><Check size={16} strokeWidth={3} /></span> Exam Question Generator</div>
               </div>
             </div>
 
@@ -341,8 +341,8 @@ export default function HomePage() {
           <div className={styles.statsGrid} data-reveal>
             {[
               { val: '1,000+', label: 'Active Students', icon: <Trophy size={24} /> },
-              { val: '10,000+', label: 'AI Summaries Created', icon: <Zap size={24} /> },
-              { val: 'Ace', label: 'Your Exam Goals', icon: <TrendingUp size={24} /> },
+              { val: '10,000+', label: 'Flashcard Generator Uses', icon: <BookOpen size={24} /> },
+              { val: '5,000+', label: 'Exam Question Generator Uses', icon: <Target size={24} /> },
               { val: 'High', label: 'Student Satisfaction', icon: <Star size={24} fill="currentColor" /> },
             ].map((s) => (
               <div key={s.label} className={styles.statItem}>
@@ -484,7 +484,7 @@ export default function HomePage() {
               Your Next Exam. <span className="gradient-text">Your Best Result.</span>
             </h2>
             <p className={styles.ctaSub}>
-              Join thousands of students already using our AI flashcard generator and note summarization tools to study smarter. Complete academic mastery is one click away.
+              Join thousands of students using our <strong>Flashcard Generator</strong>, <strong>Exam Question Generator</strong>, and AI note summariser to study smarter. Complete academic mastery is one click away.
             </p>
             <div className={styles.ctaBtns}>
               <Link href="/ai-tools" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Rocket size={18} /> Access AI Tools Free</Link>
