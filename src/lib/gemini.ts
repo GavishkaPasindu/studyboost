@@ -3,7 +3,7 @@ const GEMINI_API_URL =
   'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent';
 
 export async function callGemini(prompt: string, apiKey?: string): Promise<string> {
-  const key = apiKey || process.env.NEXT_PUBLIC_GEMINI_API_KEY || 'AIzaSyCrxG2_dA0WbazxyuslrVIYUpYCIrG2jOk';
+  const key = apiKey || process.env.NEXT_PUBLIC_GEMINI_API_KEY;
   if (!key) throw new Error('Please enter your Gemini API key in the environment variables.');
 
   const res = await fetch(`${GEMINI_API_URL}?key=${key}`, {
