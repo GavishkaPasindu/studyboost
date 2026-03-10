@@ -127,53 +127,54 @@ export default function ContactPage() {
                                 </div>
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                                     <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                                        <CheckCircle2 size={16} color="#34d399" /> Weekly AI study tips & tricks
-                                    </li>
-                                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
-                                        <CheckCircle2 size={16} color="#34d399" /> Priority community support
-                                    </li>
-                                    <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
-                                        <CheckCircle2 size={16} color="#34d399" /> Early access to new AI tools
-                                    </li>
-                                </ul>
-                                <a
-                                    href="https://forms.gle/iRyNiwRdFracCCg89"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="btn-primary"
-                                    style={{ width: '100%', justifyContent: 'center', padding: '16px' }}
-                                >
-                                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
-                                        Subscribe via Form <ExternalLink size={18} />
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-
-                        {/* Social */}
-                        <div className={`glass-card ${styles.socialCard}`}>
-                            <h3 className={styles.infoTitle}>Follow Our Community</h3>
-                            <div className={styles.socials}>
-                                {[
-                                    { icon: <Facebook size={20} />, label: 'Facebook', handle: 'StudyBoost AI' },
-                                    { icon: <Instagram size={20} />, label: 'Instagram', handle: '@studyboostai' },
-                                    { icon: <Linkedin size={20} />, label: 'LinkedIn', handle: 'StudyBoost AI' },
-                                    { icon: <Youtube size={20} />, label: 'YouTube', handle: 'StudyBoost AI' },
-                                ].map((s) => (
-                                    <a key={s.label} href="#" className={styles.socialItem}>
-                                        <span className={styles.socialIcon}>{s.icon}</span>
-                                        <div>
-                                            <div className={styles.socialLabel}>{s.label}</div>
-                                            <div className={styles.socialHandle}>{s.handle}</div>
-                                        </div>
+                                        <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
+                                            <CheckCircle2 size={16} color="#34d399" /> Weekly AI study tips & tricks
+                                        </li>
+                                        <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
+                                            <CheckCircle2 size={16} color="#34d399" /> Priority community support
+                                        </li>
+                                        <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
+                                            <CheckCircle2 size={16} color="#34d399" /> Early access to new AI tools
+                                        </li>
+                                    </ul>
+                                    <a
+                                        href="https://forms.gle/iRyNiwRdFracCCg89"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn-primary"
+                                        style={{ width: '100%', justifyContent: 'center', padding: '16px' }}
+                                    >
+                                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
+                                            Subscribe via Form <ExternalLink size={18} />
+                                        </span>
                                     </a>
-                                ))}
+                                </div>
+                            </div>
+
+                            {/* Social */}
+                            <div className={`glass-card ${styles.socialCard}`}>
+                                <h3 className={styles.infoTitle}>Follow Our Community</h3>
+                                <div className={styles.socials}>
+                                    {[
+                                        { icon: <Facebook size={20} />, label: 'Facebook', handle: 'StudyBoost AI' },
+                                        { icon: <Instagram size={20} />, label: 'Instagram', handle: '@studyboostai' },
+                                        { icon: <Linkedin size={20} />, label: 'LinkedIn', handle: 'StudyBoost AI' },
+                                        { icon: <Youtube size={20} />, label: 'YouTube', handle: 'StudyBoost AI' },
+                                    ].map((s) => (
+                                        <a key={s.label} href="#" className={styles.socialItem}>
+                                            <span className={styles.socialIcon}>{s.icon}</span>
+                                            <div>
+                                                <div className={styles.socialLabel}>{s.label}</div>
+                                                <div className={styles.socialHandle}>{s.handle}</div>
+                                            </div>
+                                        </a>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
         </div>
-            </section >
-        </div >
     );
 }
