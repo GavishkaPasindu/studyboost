@@ -17,10 +17,10 @@ const ThemeContext = createContext<ThemeContextValue>({
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const [theme, setTheme] = useState<Theme>('dark');
 
-    // On mount, read saved preference
+    // On mount, read saved preference — default is always dark
     useEffect(() => {
         const saved = localStorage.getItem('sb-theme') as Theme | null;
-        const preferred = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        const preferred = saved ?? 'dark';
         setTheme(preferred);
         document.documentElement.setAttribute('data-theme', preferred);
     }, []);
