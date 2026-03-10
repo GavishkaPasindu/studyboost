@@ -139,7 +139,7 @@ export default function FeaturesPage() {
             <section className="section">
                 <div className="container">
                     <div className="grid-2" style={{ gap: '64px', alignItems: 'center', marginBottom: '100px' }}>
-                        <div data-reveal="left">
+                        <div>
                             <div className="section-label">Flashcard Generator</div>
                             <h2 className="section-title">Automated <span className="gradient-text">Revision Decks</span></h2>
                             <p className="section-subtitle" style={{ marginLeft: 0 }}>
@@ -151,7 +151,7 @@ export default function FeaturesPage() {
                                 <li style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><CheckCircle2 size={20} color="#34d399" /> Spaced repetition ready flashcards</li>
                             </ul>
                         </div>
-                        <div className={`glass-card ${styles.visualBox}`} data-reveal="right" style={{ padding: '40px', background: 'var(--card-bg)', border: '1px solid var(--border)' }}>
+                        <div className={`glass-card ${styles.visualBox}`} style={{ padding: '40px', background: 'var(--card-bg)', border: '1px solid var(--border)' }}>
                             <div style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '20px' }}>AI Revision Card Example</div>
                             <div style={{ background: 'rgba(129, 140, 248, 0.1)', padding: '20px', borderRadius: '12px', borderLeft: '4px solid #818cf8', marginBottom: '16px' }}>
                                 <div style={{ fontSize: '0.8rem', opacity: 0.6, marginBottom: '8px' }}>FRONT (Question)</div>
@@ -165,7 +165,7 @@ export default function FeaturesPage() {
                     </div>
 
                     <div className="grid-2" style={{ gap: '64px', alignItems: 'center' }}>
-                        <div className={`glass-card ${styles.visualBox}`} data-reveal="left" style={{ padding: '40px', order: 2 }}>
+                        <div className={`glass-card ${styles.visualBox}`} style={{ padding: '40px', order: 2 }}>
                             <div style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '20px' }}>AI Summarization Output</div>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                                 <div style={{ width: '100%', height: '12px', background: 'var(--border)', borderRadius: '6px' }} />
@@ -178,7 +178,7 @@ export default function FeaturesPage() {
                                 </div>
                             </div>
                         </div>
-                        <div data-reveal="right" style={{ order: 1 }}>
+                        <div style={{ order: 1 }}>
                             <div className="section-label">Note Summarizer</div>
                             <h2 className="section-title">Automated <span className="gradient-text">Academic Synthesis</span></h2>
                             <p className="section-subtitle" style={{ marginLeft: 0 }}>
