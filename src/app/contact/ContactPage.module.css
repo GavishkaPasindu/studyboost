@@ -24,10 +24,14 @@
 }
 
 .wrap {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 40px;
-    align-items: start;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.subscriptionWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .sectionTitle {
@@ -101,30 +105,71 @@
     padding: 24px;
 }
 
+.primaryCard {
+    padding: 48px !important;
+    background: radial-gradient(circle at top right, rgba(129, 140, 248, 0.1), transparent), 
+                rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(129, 140, 248, 0.2);
+}
+
 .magnetHeader {
     display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    margin-bottom: 18px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 32px;
 }
 
 .magnetEmoji {
-    font-size: 2rem;
-    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
 }
 
 .magnetTitle {
     font-family: 'Outfit', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 800;
     color: var(--text-1);
-    margin-bottom: 6px;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
 }
 
 .magnetSub {
-    font-size: 0.82rem;
-    color: #475569;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    color: var(--text-2);
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.actionArea {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.features {
+    width: 100%;
+    max-width: 400px;
+}
+
+.featureList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.featureList li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    color: var(--text-1);
 }
 
 .magnetForm {

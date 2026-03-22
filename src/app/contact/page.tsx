@@ -24,15 +24,7 @@ export default function ContactPage() {
     return (
         <div className={styles.page}>
             <div className={styles.header} style={{ position: 'relative' }}>
-                <a
-                    href="https://forms.gle/iRyNiwRdFracCCg89"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary"
-                    style={{ position: 'absolute', top: '24px', right: '32px', display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 20px', fontSize: '0.9rem' }}
-                >
-                    <ExternalLink size={16} /> Subscribe via Form
-                </a>
+
                 <div className="container">
                     <div className="section-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}><Mail size={14} /> Get In Touch</div>
                     <h1 className={styles.title}>
@@ -47,116 +39,35 @@ export default function ContactPage() {
             <section className="section">
                 <div className="container">
                     <div className={styles.wrap}>
-                        {/* Contact Form */}
-                        <div className={styles.formSection}>
-                            <h2 className={styles.sectionTitle}>Send a Message</h2>
-                            {submitted ? (
-                                <div className={styles.successBox}>
-                                    <span className={styles.successIcon}><CheckCircle2 size={32} /></span>
-                                    <h3>Message Sent!</h3>
-                                    <p>Your default email client has opened with your message pre-filled. Thank you for reaching out - we&apos;ll respond within 24 hours.</p>
-                                    <button className="btn-outline" onClick={() => setSubmitted(false)}>Send Another</button>
-                                </div>
-                            ) : (
-                                <form onSubmit={handleSubmit} className={styles.form} id="contact-form">
-                                    <div className={styles.row}>
-                                        <div className={styles.field}>
-                                            <label className={styles.label} htmlFor="name">Full Name *</label>
-                                            <input
-                                                id="name"
-                                                name="name"
-                                                type="text"
-                                                className="input-field"
-                                                placeholder="Alex Johnson"
-                                                value={form.name}
-                                                onChange={handleChange}
-                                                required
-                                            />
-                                        </div>
-                                        <div className={styles.field}>
-                                            <label className={styles.label} htmlFor="email">Email Address *</label>
-                                            <input
-                                                id="email"
-                                                name="email"
-                                                type="email"
-                                                className="input-field"
-                                                placeholder="alex@university.edu"
-                                                value={form.email}
-                                                onChange={handleChange}
-                                                required
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className={styles.field}>
-                                        <label className={styles.label} htmlFor="subject">Subject</label>
-                                        <select
-                                            id="subject"
-                                            name="subject"
-                                            className="input-field"
-                                            value={form.subject}
-                                            onChange={handleChange}
-                                        >
-                                            <option value="">Select a topic…</option>
-                                            <option>General Enquiry</option>
-                                            <option>Premium Plan Upgrade</option>
-                                            <option>Technical Support</option>
-                                            <option>Partnership / Collaboration</option>
-                                            <option>Press / Media</option>
-                                        </select>
-                                    </div>
-                                    <div className={styles.field}>
-                                        <label className={styles.label} htmlFor="message">Message *</label>
-                                        <textarea
-                                            id="message"
-                                            name="message"
-                                            className="input-field"
-                                            placeholder="Tell us how we can help you…"
-                                            value={form.message}
-                                            onChange={handleChange}
-                                            rows={6}
-                                            required
-                                        />
-                                    </div>
-                                    <button type="submit" className="btn-primary" id="contact-submit" style={{ width: '100%', justifyContent: 'center', padding: '16px', fontSize: '1rem' }}>
-                                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Mail size={18} /> Send Message</span>
-                                    </button>
-                                </form>
-                            )}
-                        </div>
-
-                        {/* Right side - Google Form Integration */}
-                        <div className={styles.infoSection}>
-                            <div className={`glass-card ${styles.magnetCard}`} style={{ padding: '32px' }}>
-                                <div className={styles.magnetHeader} style={{ marginBottom: '24px' }}>
-                                    <span className={styles.magnetEmoji}><Gift size={40} color="#818cf8" strokeWidth={1.5} /></span>
+                        {/* Subscriptions - Primary Action */}
+                        <div className={styles.subscriptionWrapper}>
+                            <div className={`glass-card ${styles.magnetCard} ${styles.primaryCard}`}>
+                                <div className={styles.magnetHeader}>
+                                    <span className={styles.magnetEmoji}><Gift size={64} color="#818cf8" strokeWidth={1.5} /></span>
                                     <div>
-                                        <h3 className={styles.magnetTitle} style={{ fontSize: '1.4rem' }}>Subscribe & Support</h3>
-                                        <p className={styles.magnetSub}>Join our community to get the latest AI study tips and priority help via our form.</p>
+                                        <h2 className={styles.magnetTitle}>Subscribe & Support</h2>
+                                        <p className={styles.magnetSub}>Join our community to get the latest AI study tips, resources, and priority support.</p>
                                     </div>
                                 </div>
-                                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                                <div className={styles.actionArea}>
                                     <a
                                         href="https://forms.gle/iRyNiwRdFracCCg89"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="btn-primary"
-                                        style={{ width: '100%', justifyContent: 'center', padding: '16px', fontSize: '1rem' }}
+                                        style={{ width: '100%', justifyContent: 'center', padding: '20px', fontSize: '1.2rem', fontWeight: 700 }}
                                     >
-                                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
-                                            Subscribe via Form <ExternalLink size={18} />
+                                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '12px' }}>
+                                            Subscribe via Form <ExternalLink size={20} />
                                         </span>
                                     </a>
-                                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                                        <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
-                                            <CheckCircle2 size={16} color="#34d399" /> Weekly AI study tips & tricks
-                                        </li>
-                                        <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
-                                            <CheckCircle2 size={16} color="#34d399" /> Priority community support
-                                        </li>
-                                        <li style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', color: 'var(--text-2)' }}>
-                                            <CheckCircle2 size={16} color="#34d399" /> Early access to new AI tools
-                                        </li>
-                                    </ul>
+                                    <div className={styles.features}>
+                                        <ul className={styles.featureList}>
+                                            <li><CheckCircle2 size={20} color="#34d399" /> <span>Weekly AI study tips & tricks</span></li>
+                                            <li><CheckCircle2 size={20} color="#34d399" /> <span>Priority community support</span></li>
+                                            <li><CheckCircle2 size={20} color="#34d399" /> <span>Early access to new AI tools</span></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
 
