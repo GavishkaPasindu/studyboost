@@ -48,13 +48,15 @@ export default function Footer() {
                     </h4>
                     <p>Get AI study tips, resources, and exclusive offers in your inbox.</p>
                     <div className={styles.form}>
-                        <input
-                            type="email"
-                            placeholder="your@email.com"
-                            className="input-field"
-                            aria-label="Email for newsletter"
-                        />
-                        <button className="btn-primary btn-sm">Subscribe</button>
+                        <a 
+                            href="https://forms.gle/iRyNiwRdFracCCg89" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="btn-primary btn-sm"
+                            style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
+                        >
+                            Subscribe via Form
+                        </a>
                     </div>
                 </div>
             </div>
